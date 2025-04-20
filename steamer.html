@@ -22,9 +22,9 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
     <link rel="stylesheet" href="style.css" />
-    <script src="js/script.js"></script>
   </head>
-  <body data-bs-spy="scroll" data-bs-target="#myNavbar">
+  <body data-bs-target="#myNavbar">
+    <div id="aPropos"></div>
     <nav id="myNavbar" class="navbar navbar-expand-lg navbar-light sticky-top">
       <div class="container-fluid">
         <a class="navbar-brand" href="#"></a>
@@ -41,11 +41,11 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
-            <a class="nav-link active" aria-current="page" href="#aPropos"
-              >Moi</a
-            >
+            <a class="nav-link" href="#aPropos">Moi</a>
             <a class="nav-link" href="#competences">Compétences</a>
-            <a class="nav-link active" href="#portfolio">portfolio</a>
+            <a class="nav-link active" aria-current="page" href="#portfolio"
+              >Portfolio</a
+            >
           </div>
           <div class="navbar-nav">
             <div class="footer-links">
@@ -73,7 +73,11 @@
     <!-- Section projet -->
     <div class="container project-section">
       <div class="row align-items-center">
-        <a href="index.html" class="return-link">
+        <a
+          href="index.html"
+          class="return-link"
+          title="Retour à l'accueil du portfolio"
+        >
           <i class="fas fa-arrow-left"></i> Retour
         </a>
 
@@ -133,7 +137,9 @@
     </div>
     <!-- Footer -->
     <footer class="text-center">
-      <a href="#about" class="bold-link"><span class="bi-chevron-up"></span></a>
+      <a href="#aPropos" class="bold-link"
+        ><span class="bi-chevron-up"></span
+      ></a>
       <div class="footer-info">
         <p>&copy; 2025 - Mon Portfolio</p>
         <p>
@@ -161,5 +167,6 @@
         </a>
       </div>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>

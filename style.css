@@ -45,16 +45,15 @@ title {
   text-align: center;
 }
 
-h4 {
-  font-size: 22px;
-}
-
 h5 {
   font-size: 20px;
 }
 
 p {
   font-size: 16px;
+}
+.github-link i {
+  color: black;
 }
 
 /* NAVBAR */
@@ -88,26 +87,11 @@ p {
   margin-right: 10px;
 }
 
-/* Style général pour le lien GitHub */
-.github-link {
-  font-size: 1.2rem;
-  display: flex;
-  align-items: center;
-  padding: 10px 20px;
-  border: 2px solid #000000;
-  border-radius: 5px;
-  transition: box-shadow 0.3s ease-in-out;
-}
-
-/* Style pour l'icône GitHub */
-.github-link i {
-  font-size: 2rem;
-  margin-right: 8px;
-}
-
 /* A PROPOS */
+
 #aPropos {
   background-color: #fbf5f4;
+  padding: 50px 0;
 }
 
 .profile-picture {
@@ -117,7 +101,7 @@ p {
 
 .rounded-circle {
   width: 250px;
-  height: 250px;
+  height: auto;
   border: 2px solid#000000;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
   margin: 20px auto;
@@ -128,12 +112,12 @@ p {
   margin-bottom: 20px;
   font-style: italic;
 }
-
-#aPropos .heading h3 {
-  color: #333333;
-  font-weight: 400;
-  font-size: 1.4rem;
+#aPropos .about {
+  font-size: 1.3rem;
+  color: black;
+  text-align: justify;
   line-height: 1.6;
+  margin-bottom: 20px;
 }
 
 /* COMPETENCES */
@@ -232,57 +216,7 @@ p {
   margin-top: 10px;
 }
 
-/* Mes ATOUTS*/
-#mesAtous {
-  background-color: #f7ece9;
-}
-#mesAtous .heading h2 {
-  color: #333333;
-}
-
-#mesAtous p {
-  font-size: 22px;
-  font-weight: 400;
-  margin-bottom: 10px;
-}
-#myCarousel {
-  position: relative;
-}
-
-#myCarousel .carousel-item {
-  padding: 30px 30px 90px;
-}
-
-#myCarousel .carousel-item h3 {
-  color: #b0432b;
-  font-style: italic;
-}
-
-.carousel-control-prev,
-.carousel-control-next {
-  position: absolute;
-  top: 45%;
-  transform: translateY(-50%);
-  width: 40px;
-  height: 40px;
-  background-color: rgba(176, 67, 43, 0.1);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 10;
-}
-
-/* Position des flèches selon les écrans */
-.carousel-control-prev {
-  left: -25px;
-}
-
-.carousel-control-next {
-  right: -25px;
-}
-
-/*FOOTER */
+/* FOOTER */
 footer {
   background-color: #fbf5f4;
   padding: 20px 0px 40px;
@@ -312,17 +246,16 @@ footer span {
   color: #000000;
   text-decoration: none;
 }
-
 .footer-links {
-  text-align: center;
-  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: nowrap;
+  align-items: center;
 }
 
 .footer-links a {
-  display: inline-block;
-  margin: 0 10px;
   font-size: 30px;
-
   transition: transform 0.3s ease, color 0.3s ease;
   border: none;
   background: none;
@@ -335,35 +268,8 @@ footer span {
   vertical-align: middle;
 }
 
-.linkedin-link {
-  color: #0077b5;
-}
-
-.github-link {
-  color: #181717;
-}
-
 .footer-links a:hover {
   transform: scale(1.2);
-}
-
-.footer-links .download-cv {
-  display: inline-block;
-  margin: 0 10px;
-  color: #b0563d;
-  text-decoration: none;
-  font-size: 16px;
-  font-weight: bold;
-  transition: color 0.3s ease, transform 0.3s ease;
-}
-
-.footer-links .download-cv:hover {
-  color: #b0371c;
-  transform: scale(1.1);
-}
-
-.footer-links .download-cv i {
-  margin-right: 5px;
 }
 
 /*projet steamer*/
@@ -434,30 +340,19 @@ footer span {
 }
 
 @media (max-width: 768px) {
-  .heading h1 {
-    font-size: 1.5rem;
+  .profile-picture {
+    max-width: 250px;
   }
-  .heading h3 {
-    font-size: 1rem;
-    text-align: justify;
-    letter-spacing: -0.5px;
-    hyphens: auto;
-    word-wrap: break-word;
+  #aPropos .about {
+    font-size: 1.1rem;
   }
+}
 
-  .footer-links a {
-    display: block;
-    margin: 10px 0;
-    transition: color 0.3s ease, opacity 0.3s ease;
+@media (min-width: 992px) {
+  .project-images {
+    flex-direction: column;
+    align-items: center;
   }
-
-  @media (min-width: 992px) {
-    .project-images {
-      flex-direction: column;
-      align-items: center;
-    }
-  }
-
   .project-images img.custom-img {
     height: 220px;
     object-fit: contain;
@@ -469,7 +364,19 @@ footer span {
     padding: 65px 20px;
   }
 }
-@media (min-width: 530px) and (max-width: 767.98px) {
+
+.project-images img.custom-img {
+  height: 220px;
+  object-fit: contain;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-top: -2px;
+}
+
+.project-section {
+  padding: 65px 20px;
+}
+
+@media (min-width: 300px) and (max-width: 767.98px) {
   #portfolio .col-md-4 {
     padding: 0 5px;
   }
@@ -498,11 +405,7 @@ footer span {
     padding: 5px;
     font-size: 15px;
   }
-}
-
-/*Masquer la section mes atouts*/
-@media (max-width: 767.98px) {
-  #mesAtous {
-    display: none;
+  #aPropos .about {
+    font-size: 1rem;
   }
 }
