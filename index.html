@@ -1,10 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <title>Najet Ramoul | Développeuse Web Freelance | Portfolio Création Site Web</title>
     <meta charset="utf-8" />
+    <meta name="author" content="Najet Ramoul" />
+    <meta name="robots" content="index, follow" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="Portfolio de Najet Ramoul, développeuse web freelance spécialisée en création de sites web modernes, sur mesure, responsive et performants avec Angular, Spring Boot, PHP et WordPress." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://najet-ramoul.com/" /> 
+
+     <!-- Canonical -->
+     <link rel="canonical" href="https://najet-ramoul.com/" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
@@ -177,7 +187,62 @@
   </div>
 </section>
 
+<!-- Mes Services -->
+<section id="services" class="container-fluid py-5">
+  <div class="text-center mb-5">
+    <h2 class="title">Mes Services</h2>
+    <div class="divider mx-auto my-3"></div>
+  </div>
+
+  <div class="container">
+    <div class="row g-4">
+      
+      <!-- Création de site web -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm border-0 text-center p-4">
+          <div class="mb-3 tech-logo">
+            <i class="fas fa-laptop-code fa-3x text-primary"></i>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Création de site web</h5>
+            <p>Sites vitrines ou boutiques en ligne, 100% responsive (PC, tablette, mobile). Conception sur mesure, adaptée à vos besoins.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Refonte de site -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm border-0 text-center p-4">
+          <div class="mb-3 tech-logo">
+            <i class="fas fa-sync-alt fa-3x text-info"></i>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Refonte de site</h5>
+            <p>Modernisation de sites existants pour améliorer le design, la performance et l'expérience utilisateur.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Maintenance & support -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm border-0 text-center p-4">
+          <div class="mb-3 tech-logo">
+            <i class="fas fa-tools fa-3x text-warning"></i>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Maintenance & support</h5>
+            <p>Mises à jour régulières, sécurité, sauvegardes et assistance technique pour assurer la stabilité de votre site web.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
 <!-- Portfolio - Réalisations de projets web par un développeur full stack -->
+<!-- Portfolio - Réalisations de projets web -->
 <section id="portfolio" class="container-fluid py-5">
   <div class="text-center mb-5">
     <h2 class="title">Portfolio de projets web</h2>
@@ -187,47 +252,41 @@
 
   <div class="container">
     <div class="row g-4">
-
-      <!-- Projet STEAMER -->
-      <div class="col-md-4">
-        <div class="image-container">
-          <a href="steamer.html" target="_blank" title="Voir le projet STEAMER - Application de rencontre pour gamers">
-            <img src="images/projectSteamer.jpg" class="img-thumbnail" alt="Projet STEAMER : Application web de rencontres entre joueurs" />
+      
+      <!-- Projet 1 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="portfolio-item">
+          <a href="https://etherea.najet-ramoul.com">
+            <img src="images/bannerHome.jpg" alt="..." />
             <div class="overlay">
-              <p>
-                <strong>Projet STEAMER</strong> - Application web réalisée en formation. Cette application de rencontre synchronisée avec la plateforme Steam met en relation des joueurs en fonction de leurs jeux en commun sur les 15 derniers jours.
-                <br><strong>Technologies :</strong> Ionic, NestJS, API Steam, MariaDB.
-              </p>
+              <p><strong>Site e-commerce</strong> - Projet personnel de développement d'une boutique en ligne responsive avec gestion de panier, authentification utilisateur, et simulation de paiement.
+                <br><strong>Technologies :</strong> Angular, Spring Boot, MySQL.</p>
             </div>
           </a>
         </div>
       </div>
 
-      <!-- Projet Toolbox UHA -->
-      <div class="col-md-4">
-        <div class="image-container">
-          <a href="https://www.outils-pedagogie.novatris.uha.fr/" target="_blank" title="Accéder à la plateforme pédagogique UHA Toolbox">
-            <img src="images/projectToolbox.jpg" class="img-thumbnail" alt="Plateforme pédagogique UHA Toolbox pour enseignants" />
+      <!-- Projet 2 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="portfolio-item">
+          <a href="https://www.outils-pedagogie.novatris.uha.fr/" target="_blank">
+            <img src="images/projectToolbox.jpg" alt="..." />
             <div class="overlay">
-              <p>
-                <strong>La boîte à outils</strong> - Projet réalisé en stage pour l'Université de Haute-Alsace. Ce site propose des outils pédagogiques innovants pour les enseignants.
-                <br><strong>Technologies :</strong> PHP, JavaScript, WordPress.
-              </p>
+              <p><strong>La boîte à outils</strong> - Projet réalisé en stage pour l'Université de Haute-Alsace. Ce site propose des outils pédagogiques innovants pour les enseignants.
+                <br><strong>Technologies :</strong> PHP, JavaScript, WordPress.</p>
             </div>
           </a>
         </div>
       </div>
 
-      <!-- Projet e-commerce personnel -->
-      <div class="col-md-4">
-        <div class="image-container">
-          <a href="https://etherea.najet-ramoul.com" title="Projet e-commerce personnel - Développement Angular / Spring Boot">
-            <img src="images/bannerHome.jpg" class="img-thumbnail" alt="Projet e-commerce full stack en Angular et Spring Boot" />
+      <!-- Projet 3 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="portfolio-item">
+          <a href="steamer.html" target="_blank">
+            <img src="images/projectSteamer.jpg" alt="..." />
             <div class="overlay">
-              <p>
-                <strong>Site e-commerce</strong> - Projet personnel de développement d'une boutique en ligne responsive avec gestion de panier, authentification utilisateur, et simulation de paiement.
-                <br><strong>Technologies :</strong> Angular, Spring Boot, MySQL.
-              </p>
+              <p> <strong>Projet STEAMER</strong> - Application web réalisée en formation. Cette application de rencontre synchronisée avec la plateforme Steam met en relation des joueurs en fonction de leurs jeux en commun sur les 15 derniers jours.
+                <br><strong>Technologies :</strong> Ionic, NestJS, API Steam, MariaDB.</p>
             </div>
           </a>
         </div>
