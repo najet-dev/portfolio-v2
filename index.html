@@ -76,6 +76,15 @@
         </div>
       </div>
     </nav>
+    <!-- Section de bienvenue avec image de fond -->   
+    <section id="hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-content container d-flex flex-column justify-content-center align-items-center text-center">
+        <h1 class="hero-title">Développeuse Web Freelance</h1>
+        <p class="hero-text">Je suis Najet, j'accompagne les porteurs de projets dans la création de sites web modernes et efficaces.</p>
+        <a href="#contact" class="btn devis btn-lg">Demandez un devis</a>
+      </div>
+    </section>
 
     <!-- A PROPOS -->
     <section id="aPropos" class="container-fluid">
@@ -83,22 +92,21 @@
         <img src="images/najet.jpg" class="rounded-circle" alt="Najet Ramoul - Développeuse web freelance" />
       </div>
       <div class="heading">
-        <h1>Développeuse web - Je suis Najet.</h1>
-        <p class="about">
-          Développeuse web passionnée, j'accompagne les porteurs de projets dans la création de sites web modernes, efficaces et sur mesure.
-          J'ai choisi de mettre mes compétences en développement web au service de clients souhaitant une présence en ligne professionnelle.
-          Je conçois des sites internet avec des interfaces intuitives, responsives et optimisées, en utilisant des technologies web actuelles et fiables.
-          Je m'adapte à chaque projet avec rigueur et créativité. En tant que développeuse web, je suis votre interlocutrice unique : à l'écoute, réactive et impliquée à chaque étape du développement de votre site.<br>
-          Mon objectif : vous livrer un site web de qualité, adapté à vos besoins, qui améliore votre visibilité en ligne.
-        </p>   
-    </section>
-  <!-- Compétences en développement web -->
-<section id="competences" class="container-fluid py-5">
-  <div class="text-center mb-5">
-    <h2 class="title">Mes compétences</h2>
-    <div class="divider mx-auto my-3"></div>
-    <h5 class="text-muted">Technologies web frontend et backend que j'utilise pour créer des sites internet modernes, performants et sur mesure.</h5>
-  </div>
+      <p class="about">
+      Développeuse web passionnée, je mets mes compétences au service de vos idées pour transformer votre vision en un site internet professionnel et impactant.
+      Mon approche repose sur l'écoute, la rigueur et la créativité : je conçois des interfaces intuitives, responsives et optimisées, en utilisant des technologies fiables et actuelles.
+      En tant que freelance, je suis votre interlocutrice unique : réactive, impliquée et disponible à chaque étape du projet.
+      <br>
+      Mon objectif : vous livrer un site web sur mesure, performant, et parfaitement adapté à vos besoins.
+      </p>
+    </section>   
+    <!-- Compétences en développement web -->
+    <section id="competences" class="container-fluid py-5">
+      <div class="text-center mb-5">
+        <h2 class="title">Mes compétences</h2>
+          <div class="divider mx-auto my-3"></div>
+            <h5 class="text-muted">Technologies web frontend et backend que j'utilise pour créer des sites internet modernes, performants et sur mesure.</h5>
+      </div> 
 
   <div class="container">
     <div class="row g-4">
@@ -240,8 +248,6 @@
   </div>
 </section>
 
-
-<!-- Portfolio - Réalisations de projets web par un développeur full stack -->
 <!-- Portfolio - Réalisations de projets web -->
 <section id="portfolio" class="container-fluid py-5">
   <div class="text-center mb-5">
@@ -296,9 +302,37 @@
   </div>
 </section>
 
+<!-- Section Contact -->
+  <section id="contact"  class="container-fluid py-5">
+  <div class="text-center mb-4">
+    <h2 class="title">Contact</h2>
+    <div class="divider mx-auto my-3"></div>
+    <p class="text-muted">Une idée, un projet ? Discutons-en.</p>
+  </div>
+  <form action="https://formspree.io/f/mvgaejep" method="POST" class="mx-auto" style="max-width: 600px;">
+    <div class="mb-3">
+      <input type="text" placeholder="Nom" class="form-control" id="name" name="Nom" required>
+    </div>
+    <div class="mb-3">
+      <input type="text" placeholder="Prénom" class="form-control" id="firstName" name="Prénom" required>
+    </div>
+    <div class="mb-3">
+      <input type="email" placeholder="Email" class="form-control" id="email" name="Email" required>
+    </div>
+    <div class="mb-3">
+      <textarea class="form-control" placeholder="Message" id="message" name="Message" rows="5" required></textarea>
+    </div>
+     <!-- Anti-spam -->
+    <input type="text" name="_gotcha" style="display:none">
+      <div class="text-center">
+    <button type="submit" class="btn devis submit">Envoyer</button>
+    </div>
+  </form>
+</section>
+
 <!-- Footer -->
 <footer class="text-center">
-  <a href="#aPropos" class="bold-link"><span class="bi-chevron-up"></span></a>
+  <a href="#hero" class="bold-link"><span class="bi-chevron-up"></span></a>
   <div class="footer-info">
     <p>&copy; 2025 - Mon Portfolio</p>
       <p>Contactez-moi par email : <a href="mailto:rams2012@hotmail.fr">najet.ramoul68@hotmail.fr</a></p>
@@ -309,8 +343,7 @@
         <i class="bi bi-linkedin"></i>
     </a>
     <a href="https://github.com/najet-dev"target="_blank" rel="noopener noreferrer" class="github-link">
-      <i class="bi bi-github"></i>    </a>
-         
+      <i class="bi bi-github"></i>    </a>      
   </div>
 </footer>
 <script src="script.js"></script>
