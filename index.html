@@ -1,17 +1,22 @@
 <!DOCTYPE html>
 <html lang="fr">
   <head>
-    <title>Najet Ramoul | Développeuse Web Freelance | Portfolio Création Site Web</title>
+    <title>
+      Najet Ramoul | Développeuse Web Freelance | Portfolio Création Site Web
+    </title>
     <meta charset="utf-8" />
     <meta name="author" content="Najet Ramoul" />
     <meta name="robots" content="index, follow" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Portfolio de Najet Ramoul, développeuse web freelance spécialisée en création de sites web modernes, sur mesure, responsive et performants avec Angular, Spring Boot, PHP et WordPress." />
+    <meta
+      name="description"
+      content="Portfolio de Najet Ramoul, développeuse web freelance spécialisée en création de sites web modernes, sur mesure, responsive et performants avec Angular, Spring Boot, PHP et WordPress."
+    />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://najet-ramoul.com/" /> 
+    <meta property="og:url" content="https://najet-ramoul.com/" />
 
-     <!-- Canonical -->
-     <link rel="canonical" href="https://najet-ramoul.com/" />
+    <!-- Canonical -->
+    <link rel="canonical" href="https://najet-ramoul.com/" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -43,7 +48,12 @@
   <body data-bs-spy="scroll" data-bs-target="#myNavbar">
     <nav id="myNavbar" class="navbar navbar-expand-lg navbar-light sticky-top">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#"></a>
+        <!-- Logo à gauche -->
+        <a class="navbar-brand" href="#">
+          <img src="logo.png" alt="Logo" width="50" height="50" />Najet Ramoul
+        </a>
+
+        <!-- Bouton pour petits écrans -->
         <button
           class="navbar-toggler"
           type="button"
@@ -55,297 +65,296 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+
+        <!-- Liens à droite -->
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNavAltMarkup"
+        >
           <div class="navbar-nav">
-            <a class="nav-link" aria-current="page" href="#aPropos"
-              >Moi</a
+            <a class="nav-link" aria-current="page" href="index.html"
+              >Accueil</a
             >
-            <a class="nav-link" href="#competences">Compétences</a>
-            <a class="nav-link" href="#portfolio">portfolio</a>
-          </div>
-          <div class="navbar-nav">
-            <div class="footer-links">
-              <a href="https://www.linkedin.com/in/najet-ramoul-312845233/" target="_blank" rel="noopener noreferrer" class="linkedin-link">
-                  <i class="bi bi-linkedin"></i>
-              </a>
-              <a href="https://github.com/najet-dev"target="_blank" rel="noopener noreferrer" class="github-link">
-                  <i class="bi bi-github"></i>
-              </a>    
-          </div>
+            <a class="nav-link" href="services.html">Services</a>
+            <a class="nav-link" href="#portfolio">Portfolio</a>
+            <a class="nav-link" href="about.html">À propos</a>
+            <a class="nav-link" href="contact.html">Contact</a>
           </div>
         </div>
       </div>
     </nav>
-    <!-- Section de bienvenue avec image de fond -->   
+
+    <!-- Section about-->
     <section id="hero">
       <div class="hero-overlay"></div>
-      <div class="hero-content container d-flex flex-column justify-content-center align-items-center text-center">
-        <h1 class="hero-title">Développeuse Web Freelance</h1>
-        <p class="hero-text">Je suis Najet, j'accompagne les porteurs de projets dans la création de sites web modernes et efficaces.</p>
-        <a href="#contact" class="btn devis btn-lg">Demandez un devis</a>
+      <div
+        class="hero-content container d-flex flex-column justify-content-center align-items-center text-center"
+      >
+        <p class="hero-title">
+          Développeuse web freelance, spécialisée dans la création de sites sur
+          mesure.
+        </p>
+        <p class="hero-text">
+          J’aide les artisans, indépendants et petites entreprises à créer un
+          site professionnel, moderne et performant.
+        </p>
+        <a href="contact.html" class="btn devis btn-lg">Demandez un devis</a>
       </div>
     </section>
 
-    <!-- A PROPOS -->
-    <section id="aPropos" class="container-fluid">
-      <div class="col-8 col-lg-4 profile-picture">
-        <img src="images/najet.jpg" class="rounded-circle" alt="Najet Ramoul - Développeuse web freelance" />
-      </div>
-      <div class="heading">
-      <p class="about">
-      Développeuse web passionnée, je mets mes compétences au service de vos idées pour transformer votre vision en un site internet professionnel et impactant.
-      Mon approche repose sur l'écoute, la rigueur et la créativité : je conçois des interfaces intuitives, responsives et optimisées, en utilisant des technologies fiables et actuelles.
-      En tant que freelance, je suis votre interlocutrice unique : réactive, impliquée et disponible à chaque étape du projet.
-      <br>
-      Mon objectif : vous livrer un site web sur mesure, performant, et parfaitement adapté à vos besoins.
-      </p>
-    </section>   
-    <!-- Compétences en développement web -->
-    <section id="competences" class="container-fluid py-5">
+    <!-- Mes Services -->
+    <section id="services" class="container-fluid py-5">
       <div class="text-center mb-5">
-        <h2 class="title">Mes compétences</h2>
-          <div class="divider mx-auto my-3"></div>
-            <h5 class="text-muted">Technologies web frontend et backend que j'utilise pour créer des sites internet modernes, performants et sur mesure.</h5>
-      </div> 
-
-  <div class="container">
-    <div class="row g-4">
-      <!-- HTML / CSS -->
-      <div class="col-md-4">
-        <div class="card h-100 shadow-sm border-0 text-center p-3">
-          <div class="card-tech-group">
-            <img src="images/html.png" alt="Logo HTML - langage de balisage pour le web" class="tech-logo" />
-            <img src="images/css.png" alt="Logo CSS - feuille de style pour mise en page web" class="tech-logo" />
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">Développement web avec HTML et CSS</h5>
-            <p>Structure et mise en page responsive de sites internet professionnels.</p>
-          </div>
-        </div>
+        <h2 class="title">Mes Services</h2>
+        <div class="divider mx-auto my-3"></div>
       </div>
 
-      <!-- Bootstrap -->
-      <div class="col-md-4">
-        <div class="card h-100 shadow-sm border-0 text-center p-3">
-          <img src="images/bootstrap.jpg" alt="Logo Bootstrap - framework CSS responsive" class="card-img-top mx-auto tech-logo" />
-          <div class="card-body">
-            <h5 class="card-title">Framework CSS Bootstrap</h5>
-            <p>Création rapide de designs modernes et responsives.</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- JavaScript / Angular -->
-      <div class="col-md-4">
-        <div class="card h-100 shadow-sm border-0 text-center p-3">
-          <div class="card-tech-group">
-            <img src="images/javasScript.jpg" alt="Logo JavaScript - langage de programmation frontend" class="tech-logo" />
-            <img src="images/angular.png" alt="Logo Angular - framework frontend JavaScript" class="tech-logo" />
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">JavaScript et Angular</h5>
-            <p>Création d'interfaces dynamiques et d'applications web modernes côté client.</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- PHP / WordPress -->
-      <div class="col-md-4">
-        <div class="card h-100 shadow-sm border-0 text-center p-3">
-          <div class="card-tech-group">
-            <img src="images/php-logo.png" alt="Logo PHP - langage de programmation backend" class="tech-logo" />
-            <img src="images/wordPress.jpg" alt="Logo WordPress - CMS pour site vitrine ou blog" class="tech-logo" />
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">Développement PHP et WordPress</h5>
-            <p>Sites web dynamiques ou gestion de contenu avec le CMS WordPress.</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Java / Spring -->
-      <div class="col-md-4">
-        <div class="card h-100 shadow-sm border-0 text-center p-3">
-          <div class="card-tech-group">
-            <img src="images/java.png" alt="Logo Java - langage de programmation robuste" class="tech-logo" />
-            <img src="images/spring.png" alt="Logo Spring - framework backend Java" class="tech-logo" />
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">Java et Spring Boot</h5>
-            <p>Développement d'API REST sécurisées et performantes côté serveur.</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Bases de données -->
-      <div class="col-md-4">
-        <div class="card h-100 shadow-sm border-0 text-center p-3">
-          <div class="card-tech-group">
-            <img src="images/mysql.png" alt="Logo MySQL - système de gestion de base de données" class="tech-logo" />
-            <img src="images/mariaDB.png" alt="Logo MariaDB - alternative open-source à MySQL" class="tech-logo" />
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">Bases de données MySQL / MariaDB</h5>
-            <p>Gestion de la data avec des systèmes de bases de données relationnelles performants.</p>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- Mes Services -->
-<section id="services" class="container-fluid py-5">
-  <div class="text-center mb-5">
-    <h2 class="title">Mes Services</h2>
-    <div class="divider mx-auto my-3"></div>
-  </div>
-
-  <div class="container">
-    <div class="row g-4">
-      
-      <!-- Création de site web -->
-      <div class="col-md-4">
-        <div class="card h-100 shadow-sm border-0 text-center p-4">
-          <div class="mb-3 tech-logo">
-            <i class="fas fa-laptop-code fa-3x text-primary"></i>
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">Création de site web</h5>
-            <p>Sites vitrines ou boutiques en ligne, 100% responsive (PC, tablette, mobile). Conception sur mesure, adaptée à vos besoins.</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Refonte de site -->
-      <div class="col-md-4">
-        <div class="card h-100 shadow-sm border-0 text-center p-4">
-          <div class="mb-3 tech-logo">
-            <i class="fas fa-sync-alt fa-3x text-info"></i>
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">Refonte de site</h5>
-            <p>Modernisation de sites existants pour améliorer le design, la performance et l'expérience utilisateur.</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Maintenance & support -->
-      <div class="col-md-4">
-        <div class="card h-100 shadow-sm border-0 text-center p-4">
-          <div class="mb-3 tech-logo">
-            <i class="fas fa-tools fa-3x text-warning"></i>
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">Maintenance & support</h5>
-            <p>Mises à jour régulières, sécurité, sauvegardes et assistance technique pour assurer la stabilité de votre site web.</p>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- Portfolio - Réalisations de projets web -->
-<section id="portfolio" class="container-fluid py-5">
-  <div class="text-center mb-5">
-    <h2 class="title">Portfolio de projets web</h2>
-    <div class="divider mx-auto my-3"></div>
-    <p class="text-muted">Découvrez quelques projets réalisés durant ma formation, mes stages et mes expériences personnelles en tant que développeur web full stack.</p>
-  </div>
-
-  <div class="container">
-    <div class="row g-4">
-      
-      <!-- Projet 1 -->
-      <div class="col-12 col-md-6 col-lg-4">
-        <div class="portfolio-item">
-          <a href="https://etherea.najet-ramoul.com">
-            <img src="images/bannerHome.jpg" alt="..." />
-            <div class="overlay">
-              <p><strong>Site e-commerce</strong> - Projet personnel de développement d'une boutique en ligne responsive avec gestion de panier, authentification utilisateur, et simulation de paiement.
-                <br><strong>Technologies :</strong> Angular, Spring Boot, MySQL.</p>
+      <div class="container">
+        <div class="row g-4">
+          <!-- Création de site web -->
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm border-0 text-center p-4">
+              <div class="mb-3 tech-logo">
+                <i class="fas fa-laptop-code fa-3x text-primary"></i>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Création de site web</h5>
+                <p>
+                  Sites vitrines ou boutiques en ligne, 100% responsive (PC,
+                  tablette, mobile). Conception sur mesure, adaptée à vos
+                  besoins.
+                </p>
+              </div>
             </div>
-          </a>
-        </div>
-      </div>
+          </div>
 
-      <!-- Projet 2 -->
-      <div class="col-12 col-md-6 col-lg-4">
-        <div class="portfolio-item">
-          <a href="https://www.outils-pedagogie.novatris.uha.fr/" target="_blank">
-            <img src="images/projectToolbox.jpg" alt="..." />
-            <div class="overlay">
-              <p><strong>La boîte à outils</strong> - Projet réalisé en stage pour l'Université de Haute-Alsace. Ce site propose des outils pédagogiques innovants pour les enseignants.
-                <br><strong>Technologies :</strong> PHP, JavaScript, WordPress.</p>
+          <!-- Refonte de site -->
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm border-0 text-center p-4">
+              <div class="mb-3 tech-logo">
+                <i class="fas fa-sync-alt fa-3x text-info"></i>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Refonte de site</h5>
+                <p>
+                  Modernisation de sites existants pour améliorer le design, la
+                  performance et l'expérience utilisateur.
+                </p>
+              </div>
             </div>
-          </a>
-        </div>
-      </div>
+          </div>
 
-      <!-- Projet 3 -->
-      <div class="col-12 col-md-6 col-lg-4">
-        <div class="portfolio-item">
-          <a href="steamer.html" target="_blank">
-            <img src="images/projectSteamer.jpg" alt="..." />
-            <div class="overlay">
-              <p> <strong>Projet STEAMER</strong> - Application web réalisée en formation. Cette application de rencontre synchronisée avec la plateforme Steam met en relation des joueurs en fonction de leurs jeux en commun sur les 15 derniers jours.
-                <br><strong>Technologies :</strong> Ionic, NestJS, API Steam, MariaDB.</p>
+          <!-- Maintenance & support -->
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm border-0 text-center p-4">
+              <div class="mb-3 tech-logo">
+                <i class="fas fa-tools fa-3x text-warning"></i>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Maintenance & support</h5>
+                <p>
+                  Mises à jour régulières, sécurité, sauvegardes et assistance
+                  technique pour assurer la stabilité de votre site web.
+                </p>
+              </div>
             </div>
-          </a>
+          </div>
+        </div>
+        <!-- Bouton Découvrir tous mes services -->
+        <div class="text-center mt-5">
+          <a href="services.html" class="btn devis btn-lg px-4"
+            >Découvrir tous mes services</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio - Réalisations de projets web -->
+    <section id="portfolio" class="container-fluid py-5">
+      <div class="text-center mb-5">
+        <h2 class="title">Portfolio de projets web</h2>
+        <div class="divider mx-auto my-3"></div>
+        <p class="text-muted">
+          Découvrez quelques projets réalisés durant ma formation, mes stages et
+          mes expériences personnelles en tant que développeur web full stack.
+        </p>
+      </div>
+
+      <div class="container">
+        <div class="row g-4">
+          <!-- Projet 1 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="portfolio-item">
+              <a href="https://etherea.najet-ramoul.com">
+                <img src="images/bannerHome.jpg" alt="..." />
+                <div class="overlay">
+                  <p>
+                    <strong>Site e-commerce</strong> - Projet personnel de
+                    développement d'une boutique en ligne responsive avec
+                    gestion de panier, authentification utilisateur, et
+                    simulation de paiement. <br /><strong
+                      >Technologies :</strong
+                    >
+                    Angular, Spring Boot, MySQL.
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!-- Projet 2 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="portfolio-item">
+              <a
+                href="https://www.outils-pedagogie.novatris.uha.fr/"
+                target="_blank"
+              >
+                <img src="images/projectToolbox.jpg" alt="..." />
+                <div class="overlay">
+                  <p>
+                    <strong>La boîte à outils</strong> - Projet réalisé en stage
+                    pour l'Université de Haute-Alsace. Ce site propose des
+                    outils pédagogiques innovants pour les enseignants.
+                    <br /><strong>Technologies :</strong> PHP, JavaScript,
+                    WordPress.
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!-- Projet 3 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="portfolio-item">
+              <a href="steamer.html" target="_blank">
+                <img src="images/projectSteamer.jpg" alt="..." />
+                <div class="overlay">
+                  <p>
+                    <strong>Projet STEAMER</strong> - Application web réalisée
+                    en formation. Cette application de rencontre synchronisée
+                    avec la plateforme Steam met en relation des joueurs en
+                    fonction de leurs jeux en commun sur les 15 derniers jours.
+                    <br /><strong>Technologies :</strong> Ionic, NestJS, API
+                    Steam, MariaDB.
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Bouton projet -->
+        <div class="text-center mt-5">
+          <a href="projets.html" class="btn devis btn-lg px-4"
+            >Voir tous mes projets</a
+          >
+        </div>
+      </div>
+    </section>
+    <!-- A PROPOS -->
+    <section id="aPropos" class="container py-5">
+      <div class="row align-items-center">
+        <!-- Image à gauche -->
+        <div class="col-md-4 text-center mb-4 mb-md-0">
+          <img
+            src="images/portfolo.jpg"
+            class="img-fluid"
+            alt="Najet Ramoul - Développeuse web freelance"
+          />
+        </div>
+
+        <!-- Texte à droite -->
+        <div class="col-md-8">
+          <h2 class="title mb-3">Spécialiste en création de sites</h2>
+          <p class="about">
+            Spécialisée dans la
+            <strong
+              >création de sites modernes, performants et adaptés à vos
+              besoins</strong
+            >, j'aide les artisans, indépendants et petites entreprises à
+            valoriser leur activité en ligne.
+          </p>
+
+          <p class="about">
+            Mon approche repose sur une écoute attentive, une conception sur
+            mesure et une attention particulière portée à l'<strong
+              >ergonomie</strong
+            >
+            et à la <strong>performance</strong>. Chaque projet est pensé pour
+            refléter votre identité, tout en garantissant une expérience fluide
+            sur tous les supports (ordinateur, tablette, mobile).
+          </p>
+
+          <!-- Bouton à propos -->
+          <div class="text-start mt-4">
+            <a href="about.html" class="btn devis btn-lg px-4"
+              >En savoir plus</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer text-center text-lg-start">
+      <div class="container py-5">
+        <div class="row text-center text-md-start">
+          <!-- Coordonnées -->
+          <div class="col-md-4 mb-4">
+            <h5 class="footer-title">Coordonnées</h5>
+            <p class="footer-text">Mulhouse</p>
+            <p class="footer-text">
+              <a href="mailto:rams2012@hotmail.fr" class="footer-link"
+                >najet.ramoul68@gmail.com</a
+              >
+            </p>
+            <p class="footer-text">
+              <a href="tel:0781021037" class="footer-link">06 59 57 95 62</a>
+            </p>
+          </div>
+
+          <!-- Navigation -->
+          <div class="col-md-4 mb-4">
+            <h5 class="footer-title">Navigation</h5>
+            <ul class="list-unstyled footer-list">
+              <li><a href="index.html" class="footer-link">Accueil</a></li>
+              <li><a href="services.html" class="footer-link">Services</a></li>
+              <li>
+                <a href="index.html#portfolio" class="footer-link">Portfolio</a>
+              </li>
+              <li>
+                <a href="index.html#aPropos" class="footer-link">À propos</a>
+              </li>
+              <li><a href="contact.html" class="footer-link">Contact</a></li>
+            </ul>
+          </div>
+
+          <!-- Infos Pratiques -->
+          <div class="col-md-4 mb-4">
+            <h5 class="footer-title">Infos Pratiques</h5>
+            <ul class="list-unstyled footer-list">
+              <li><a href="#" class="footer-link">Mentions Légales</a></li>
+              <li>
+                <a href="#" class="footer-link">Politique de Confidentialité</a>
+              </li>
+              <li><a href="#" class="footer-link">Politique de Cookies</a></li>
+              <li>
+                <a href="#" class="footer-link"
+                  >Conditions Générales d'Utilisation</a
+                >
+              </li>
+              <li><a href="#" class="footer-link">Plan du site</a></li>
+            </ul>
+          </div>
         </div>
       </div>
 
-    </div>
-  </div>
-</section>
+      <div class="footer py-3 text-center">
+        <p class="mb-0">
+          &copy; 2025 Najet Ramoul — Développeuse Web Freelance
+        </p>
+      </div>
+    </footer>
 
-<!-- Section Contact -->
-  <section id="contact"  class="container-fluid py-5">
-  <div class="text-center mb-4">
-    <h2 class="title">Contact</h2>
-    <div class="divider mx-auto my-3"></div>
-    <p class="text-muted">Une idée, un projet ? Discutons-en.</p>
-  </div>
-  <form action="https://formspree.io/f/mvgaejep" method="POST" class="mx-auto" style="max-width: 600px;">
-    <div class="mb-3">
-      <input type="text" placeholder="Nom" class="form-control" id="name" name="Nom" required>
-    </div>
-    <div class="mb-3">
-      <input type="text" placeholder="Prénom" class="form-control" id="firstName" name="Prénom" required>
-    </div>
-    <div class="mb-3">
-      <input type="email" placeholder="Email" class="form-control" id="email" name="Email" required>
-    </div>
-    <div class="mb-3">
-      <textarea class="form-control" placeholder="Message" id="message" name="Message" rows="5" required></textarea>
-    </div>
-     <!-- Anti-spam -->
-    <input type="text" name="_gotcha" style="display:none">
-      <div class="text-center">
-    <button type="submit" class="btn devis submit">Envoyer</button>
-    </div>
-  </form>
-</section>
-
-<!-- Footer -->
-<footer class="text-center">
-  <a href="#hero" class="bold-link"><span class="bi-chevron-up"></span></a>
-  <div class="footer-info">
-    <p>&copy; 2025 - Mon Portfolio</p>
-      <p>Contactez-moi par email : <a href="mailto:rams2012@hotmail.fr">najet.ramoul68@hotmail.fr</a></p>
-      <p>Ou par téléphone : <a href="tel:0781021037">06.59.57.95.62</a></p>
-  </div>  
-  <div class="footer-links">
-    <a href="https://www.linkedin.com/in/najet-ramoul-312845233/" target="_blank" rel="noopener noreferrer" class="linkedin-link">
-        <i class="bi bi-linkedin"></i>
-    </a>
-    <a href="https://github.com/najet-dev"target="_blank" rel="noopener noreferrer" class="github-link">
-      <i class="bi bi-github"></i>    </a>      
-  </div>
-</footer>
-<script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
