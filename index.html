@@ -46,12 +46,10 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body data-bs-spy="scroll" data-bs-target="#myNavbar">
-    <nav id="myNavbar" class="navbar navbar-expand-lg navbar-light sticky-top">
+    <nav id="myNavbar" class="navbar navbar-expand-lg">
       <div class="container-fluid">
         <!-- Logo à gauche -->
-        <a class="navbar-brand" href="#">
-          <img src="logo.png" alt="Logo" width="50" height="50" />Najet Ramoul
-        </a>
+        <a class="navbar-brand" href="#"> bloomviaDigital </a>
 
         <!-- Bouton pour petits écrans -->
         <button
@@ -76,7 +74,7 @@
               >Accueil</a
             >
             <a class="nav-link" href="services.html">Services</a>
-            <a class="nav-link" href="#portfolio">Portfolio</a>
+            <a class="nav-link" href="projets.html">Réalisations</a>
             <a class="nav-link" href="about.html">À propos</a>
             <a class="nav-link" href="contact.html">Contact</a>
           </div>
@@ -86,19 +84,33 @@
 
     <!-- Section about-->
     <section id="hero">
-      <div class="hero-overlay"></div>
-      <div
-        class="hero-content container d-flex flex-column justify-content-center align-items-center text-center"
-      >
-        <p class="hero-title">
-          Développeuse web freelance, spécialisée dans la création de sites sur
-          mesure.
-        </p>
-        <p class="hero-text">
-          J’aide les artisans, indépendants et petites entreprises à créer un
-          site professionnel, moderne et performant.
-        </p>
-        <a href="contact.html" class="btn devis btn-lg">Demandez un devis</a>
+      <div class="container h-100 position-relative">
+        <div class="row h-100 align-items-center">
+          <!-- TEXTE À GAUCHE -->
+          <div class="col-lg-6 text-start hero-content">
+            <p class="hero-title">
+              Des sites web professionnels pour développer votre activité.
+            </p>
+            <p class="hero-text">
+              J'aide les indépendants, artisans et petites entreprises à créer
+              un site web clair, moderne et efficace.
+            </p>
+            <a href="contact.html" class="btn devis btn-lg">
+              Demandez un devis
+            </a>
+          </div>
+
+          <!-- IMAGE À DROITE -->
+          <div
+            class="col-lg-6 d-none d-lg-flex justify-content-center align-items-center"
+          >
+            <img
+              src="images/home1.png"
+              alt="Création de sites web"
+              class="hero-image img-fluid"
+            />
+          </div>
+        </div>
       </div>
     </section>
 
@@ -162,7 +174,7 @@
         </div>
         <!-- Bouton Découvrir tous mes services -->
         <div class="text-center mt-5">
-          <a href="services.html" class="btn devis btn-lg px-4"
+          <a href="services.html" class="btn devis btn-lg"
             >Découvrir tous mes services</a
           >
         </div>
@@ -244,7 +256,7 @@
         </div>
         <!-- Bouton projet -->
         <div class="text-center mt-5">
-          <a href="projets.html" class="btn devis btn-lg px-4"
+          <a href="projets.html" class="btn devis btn-lg"
             >Voir tous mes projets</a
           >
         </div>
@@ -286,9 +298,7 @@
 
           <!-- Bouton à propos -->
           <div class="text-start mt-4">
-            <a href="about.html" class="btn devis btn-lg px-4"
-              >En savoir plus</a
-            >
+            <a href="about.html" class="btn devis btn-lg">En savoir plus</a>
           </div>
         </div>
       </div>
@@ -301,7 +311,7 @@
           <!-- Coordonnées -->
           <div class="col-md-4 mb-4">
             <h5 class="footer-title">Coordonnées</h5>
-            <p class="footer-text">Mulhouse</p>
+            <p class="footer-text">Localisation : Mulhouse</p>
             <p class="footer-text">
               <a href="mailto:rams2012@hotmail.fr" class="footer-link"
                 >najet.ramoul68@gmail.com</a
