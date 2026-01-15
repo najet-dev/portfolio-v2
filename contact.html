@@ -31,54 +31,41 @@
   </head>
   <body>
     <!-- Navbar -->
-    <nav
-      class="navbar navbar-expand-lg navbar-light sticky-top"
-      style="background-color: #fbf5f4"
-    >
+    <nav id="myNavbar" class="navbar navbar-expand-lg">
       <div class="container-fluid">
-        <a class="navbar-brand fw-bold" href="index.html">
-          <img
-            src="logo.png"
-            alt="Logo Najet Ramoul"
-            width="50"
-            height="50"
-            class="me-2"
-          />
-          Najet Ramoul
-        </a>
+        <!-- Logo à gauche -->
+        <a class="navbar-brand" href="#"> bloomviaDigital </a>
+
+        <!-- Bouton pour petits écrans -->
         <button
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
+
+        <!-- Liens à droite -->
         <div
           class="collapse navbar-collapse justify-content-end"
-          id="navbarNav"
+          id="navbarNavAltMarkup"
         >
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Accueil</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="services.html">Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="index.html#portfolio">Portfolio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="index.html#aPropos">À propos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="contact.html">Contact</a>
-            </li>
-          </ul>
+          <div class="navbar-nav">
+            <a class="nav-link" aria-current="page" href="index.html"
+              >Accueil</a
+            >
+            <a class="nav-link" href="services.html">Services</a>
+            <a class="nav-link" href="projets.html">Réalisations</a>
+            <a class="nav-link" href="about.html">À propos</a>
+            <a class="nav-link" href="contact.html">Contact</a>
+          </div>
         </div>
       </div>
     </nav>
-
     <!-- Section Contact -->
     <section id="contact" class="container-fluid py-5">
       <div class="text-center mb-4">
@@ -147,14 +134,14 @@
           <!-- Coordonnées -->
           <div class="col-md-4 mb-4">
             <h5 class="footer-title">Coordonnées</h5>
-            <p class="footer-text">Muhouse</p>
+            <p class="footer-text">Localisation : Muhouse</p>
             <p class="footer-text">
-              <a href="mailto:rams2012@hotmail.fr" class="footer-link"
-                >rams2012@hotmail.fr</a
-              >
+              <a href="email" class="footer-link">najet.ramoul68@gmail.com</a>
             </p>
             <p class="footer-text">
-              <a href="tel:0781021037" class="footer-link">07 81 02 10 37</a>
+              <a href="telephone" class="footer-link"
+                >Télephone : 06 59 57 95 62</a
+              >
             </p>
           </div>
 
