@@ -45,6 +45,16 @@ section {
 .navbar .nav-link:hover,
 .navbar .nav-link.active {
   color: var(--primary);
+  position: relative;
+}
+.navbar .nav-link.active::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--primary);
 }
 
 #hero {
@@ -115,28 +125,24 @@ p {
   margin: 30px auto;
 }
 
-/* ABOUT */
-.about {
-  font-size: 1.2rem;
-  line-height: 1.7;
-  color: var(--text-dark);
+/* ================= ABOUT PAGE ================= */
+
+#about-page {
+  padding-top: 0; /* supprime l’espace blanc sous la navbar */
+  padding-bottom: 100px; /* espace avant le footer */
 }
 
-#about img {
-  border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+#about-page ul {
+  padding-left: 20px;
 }
 
-#about ul li {
-  position: relative;
-  padding-left: 25px;
-  margin-bottom: 12px;
+#about-page ul li {
+  margin-bottom: 10px;
+  line-height: 1.6;
 }
 
-#about ul li::before {
-  content: "✔";
-  position: absolute;
-  left: 0;
+#about-page h2,
+#about-page h3 {
   color: var(--primary);
 }
 
@@ -155,70 +161,54 @@ p {
   opacity: 1;
   transform: translateY(0);
 }
+/* PORTFOLIO - ACCUEIL */
 #portfolio {
-  background-color: #d4e6ef;
-  padding: 60px 0;
+  background-color: var(--bg-light);
+  padding: 80px 0;
 }
-#portfolio .section-title {
-  text-align: center;
-  margin-bottom: 40px;
-}
-#portfolio .section-title h2 {
-  font-size: 36px;
-  font-weight: bold;
-  color: #333333;
-}
-#portfolio .section-title p {
-  font-size: 18px;
-  color: #555;
-}
+
 .portfolio-item {
   position: relative;
   overflow: hidden;
-  border-radius: 8px;
-  box-shadow: 5px 5px 10px rgba(50, 10, 5, 0.2);
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
   transition: transform 0.3s ease;
 }
+
 .portfolio-item img {
   width: 100%;
-  height: 350px;
+  height: 320px;
   object-fit: cover;
-  object-position: center;
   display: block;
-  transition: filter 0.3s ease-in-out;
-  filter: brightness(0.95) contrast(1.05);
-  border-radius: 8px;
+  transition: transform 0.4s ease;
 }
+
 .portfolio-item:hover {
-  transform: scale(1.02);
+  transform: translateY(-6px);
 }
+
 .portfolio-item:hover img {
-  filter: none;
+  transform: scale(1.05);
 }
+
 .portfolio-item .overlay {
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(50, 10, 5, 0.75);
-  opacity: 0;
+  inset: 0;
+  background: rgba(30, 30, 30, 0.65);
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 20px;
-  transition: opacity 0.4s ease;
-  color: #fbf5f4;
+  gap: 8px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  color: #fff;
   text-align: center;
-  font-size: 16px;
-  line-height: 1.5;
-  border-radius: 8px;
+  padding: 20px;
 }
+
 .portfolio-item:hover .overlay {
   opacity: 1;
-}
-.portfolio-item .overlay p {
-  margin: 0;
 }
 
 /* SERVICES */
@@ -268,43 +258,31 @@ p {
   color: var(--accent);
   margin-bottom: 20px;
 }
-
-/* PORTFOLIO */
-#portfolio {
-  background-color: var(--bg-light);
+/* Page projet*/
+.service-card .text-muted {
+  font-size: 0.95rem;
+  margin-top: 10px;
 }
 
-.portfolio-item {
-  position: relative;
-  overflow: hidden;
+/* ================= CONTACT PAGE ================= */
+#contact-page {
+  padding-top: 0;
+  padding-bottom: 100px; /* espace avant le footer */
+}
+
+#contact-page .subtitle {
+  font-size: 1.15rem;
+  color: var(--text-light);
+}
+
+#contact-page .form-control {
+  padding: 12px 15px;
   border-radius: 8px;
 }
 
-.portfolio-item img {
-  height: 350px;
-  object-fit: cover;
-}
-
-.portfolio-item .overlay {
-  background-color: rgba(74, 144, 226, 0.85);
-  color: #fff;
-  opacity: 0;
-  transition: 0.4s;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
-.portfolio-item:hover .overlay {
-  opacity: 1;
-}
-
-/* CONTACT */
-#contact input:focus,
-#contact textarea:focus {
+#contact-page .form-control:focus {
   border-color: var(--accent);
-  box-shadow: 0 0 5px rgba(255, 107, 107, 0.5);
+  box-shadow: 0 0 0 0.15rem rgba(255, 107, 107, 0.25);
 }
 
 /* FOOTER */
@@ -324,6 +302,145 @@ p {
 
 .footer-link:hover {
   color: var(--accent);
+}
+/* =========================
+   PAGE PROJET – STEAMER
+========================= */
+.project-hero {
+  background: var(--bg-light);
+  padding: 70px 0 40px;
+}
+
+.project-hero h1 {
+  font-weight: 700;
+  margin-top: 20px;
+}
+
+.return-link {
+  display: inline-block;
+  margin-bottom: 15px;
+  color: var(--accent);
+  font-weight: 500;
+  text-decoration: none;
+}
+
+/* INTRO */
+
+.project-intro {
+  padding: 20px 0 15px;
+}
+
+.project-subtitle {
+  font-size: 1.1rem;
+  color: var(--text-light);
+  max-width: 700px;
+  margin-bottom: 20px;
+}
+
+.project-meta {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  font-size: 0.9rem;
+  color: var(--text-light);
+}
+
+.project-meta span {
+  background: var(--bg-light);
+  padding: 6px 14px;
+  border-radius: 20px;
+}
+
+/* CONTENT */
+
+.project-content {
+  padding: 80px 0;
+}
+
+.project-content h2 {
+  margin-top: 40px;
+  font-weight: 600;
+}
+
+.project-content ul {
+  padding-left: 18px;
+}
+
+.project-content li {
+  margin-bottom: 8px;
+}
+
+/* INLINE */
+
+.project-inline {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  margin: 80px 0;
+}
+
+.project-inline.reverse {
+  flex-direction: row-reverse;
+}
+
+.inline-text {
+  flex: 1.4;
+}
+
+.inline-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.inline-image img {
+  width: 160px;
+  border-radius: 24px;
+  background: #fff;
+  padding: 16px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+}
+
+/* TECH */
+
+.tech-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 25px 0;
+  padding-left: 0 !important;
+  margin-left: 0 !important;
+  list-style: none;
+}
+
+.tech-list li {
+  list-style: none;
+  background: var(--bg-light);
+  padding: 7px 16px;
+  border-radius: 30px;
+  font-size: 0.85rem;
+}
+
+/* NOTE */
+
+.project-note {
+  margin-top: 35px;
+  font-size: 0.9rem;
+  color: var(--text-light);
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+  .project-inline,
+  .project-inline.reverse {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .inline-image img {
+    width: 220px;
+  }
 }
 
 /* RESPONSIVE */

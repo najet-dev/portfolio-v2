@@ -50,7 +50,7 @@
           <div class="navbar-nav">
             <a class="nav-link" href="index.html">Accueil</a>
             <a class="nav-link" href="services.html">Services</a>
-            <a class="nav-link" href="projets.html">Réalisations</a>
+            <a class="nav-link active" href="projets.html">Réalisations</a>
             <a class="nav-link" href="about.html">À propos</a>
             <a class="nav-link" href="contact.html">Contact</a>
           </div>
@@ -59,10 +59,13 @@
     </nav>
 
     <!-- SECTION PROJETS -->
-    <section class="services-page container">
+    <section class="services-page">
+    <div class="section-title-bg">
       <h1>Mes projets web</h1>
+    </div> 
+    <div class="container">
       <p class="subtitle">
-        Voici quelques réalisations que j’ai conçues pour des indépendants,
+        Voici quelques réalisations que j'ai conçues pour des indépendants,
         artisans et petites entreprises.<br />
         Chaque projet est pensé pour être clair, efficace et adapté aux besoins
         du client.
@@ -71,127 +74,116 @@
       <div class="row g-4">
         <!-- PROJET 1 -->
         <div class="col-md-6 col-lg-4">
-          <div class="service-card text-center">
-            <div class="service-icon">
-              <i class="fas fa-briefcase"></i>
-            </div>
-
-            <h3>Site vitrine – Artisan</h3>
+          <div class="service-card text-center"> 
+            <h3>Site vitrine pour un peintre en bâtiment</h3>
             <p>
-              Création d’un site vitrine professionnel pour un artisan local,
-              avec présentation des services, galerie photos et formulaire de
-              contact.
+              Site fictif réalisé pour un peintre en bâtiment. Présentation des services,
+              galerie photos et formulaire de contact pour les clients.
             </p>
-
-            <a
-              href="https://www.site-artisan.fr"
-              target="_blank"
-              class="btn-devis mt-3"
-            >
+            <p class="text-muted">
+              <strong>Technologies :</strong> HTML, CSS, JavaScript, Bootstrap
+            </p>           
+            <a href="https://palette.najet-ramoul.com/" target="_blank" class="btn-devis mt-3">
               Découvrir le site
             </a>
           </div>
         </div>
-
-        <!-- PROJET 2 -->
-        <div class="col-md-6 col-lg-4">
+        <!-- PROJET 1 -->
+        <div class="col-md-6 col-lg-4">        
           <div class="service-card text-center">
-            <div class="service-icon">
-              <i class="fas fa-user"></i>
-            </div>
-
-            <h3>Portfolio freelance</h3>
+            <h3>Site e-commerce</h3>
             <p>
-              Portfolio moderne pour un indépendant, mettant en avant ses
-              compétences, ses réalisations et ses coordonnées.
+              Projet personnel de développement d’une boutique en ligne responsive avec
+              gestion de panier, authentification utilisateur et simulation de paiement.
             </p>
-
-            <a
-              href="https://www.site-freelance.fr"
-              target="_blank"
-              class="btn-devis mt-3"
-            >
+            <p class="text-muted">
+              <strong>Technologies :</strong> Angular, Spring Boot, MySQL
+            </p>
+            <a  href="https://etherea.najet-ramoul.com" target="_blank" class="btn-devis mt-3">
               Découvrir le site
             </a>
-          </div>
         </div>
-
+      </div>
+      <!-- PROJET 2 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="service-card text-center">    
+          <h3>La boîte à outils</h3>
+          <p>
+            Projet réalisé en stage pour l'Université de Haute-Alsace.
+            Plateforme proposant des outils pédagogiques innovants destinés
+            aux enseignants.
+          </p>
+          <p class="text-muted">
+            <strong>Technologies :</strong> PHP, JavaScript, WordPress
+          </p>
+          <a href="https://www.outils-pedagogie.novatris.uha.fr/" target="_blank" class="btn-devis mt-3">
+            Découvrir le site
+          </a>
+        </div>
+       </div>
         <!-- PROJET 3 -->
         <div class="col-md-6 col-lg-4">
-          <div class="service-card text-center">
-            <div class="service-icon">
-              <i class="fas fa-store"></i>
-            </div>
-
-            <h3>Site petite entreprise</h3>
-            <p>
-              Site professionnel pour une petite entreprise avec une structure
-              claire, un design moderne et une optimisation SEO de base.
-            </p>
-
-            <a
-              href="https://www.site-entreprise.fr"
-              target="_blank"
-              class="btn-devis mt-3"
-            >
-              Découvrir le site
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <!-- CTA -->
-      <div class="text-center mt-5">
-        <a href="contact.html" class="btn-devis"> Discutons de votre projet </a>
-      </div>
-    </section>
-
-    <!-- FOOTER -->
-    <footer class="footer text-center text-lg-start">
-      <div class="container py-5">
-        <div class="row text-center text-md-start">
-          <div class="col-md-4 mb-4">
-            <h5 class="footer-title">Coordonnées</h5>
-            <p class="footer-text">Localisation : Mulhouse</p>
-            <p class="footer-text">
-              <a href="mailto:najet.ramoul68@gmail.com" class="footer-link">
-                najet.ramoul68@gmail.com
-              </a>
-            </p>
-            <p class="footer-text">
-              <a href="tel:0659579562" class="footer-link"> 06 59 57 95 62 </a>
-            </p>
-          </div>
-
-          <div class="col-md-4 mb-4">
-            <h5 class="footer-title">Navigation</h5>
-            <ul class="list-unstyled footer-list">
-              <li><a href="index.html" class="footer-link">Accueil</a></li>
-              <li><a href="services.html" class="footer-link">Services</a></li>
-              <li><a href="projets.html" class="footer-link">Projets</a></li>
-              <li><a href="about.html" class="footer-link">À propos</a></li>
-              <li><a href="contact.html" class="footer-link">Contact</a></li>
-            </ul>
-          </div>
-
-          <div class="col-md-4 mb-4">
-            <h5 class="footer-title">Infos pratiques</h5>
-            <ul class="list-unstyled footer-list">
-              <li><a href="#" class="footer-link">Mentions légales</a></li>
-              <li><a href="#" class="footer-link">Confidentialité</a></li>
-              <li><a href="#" class="footer-link">Cookies</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div class="footer py-3 text-center">
-        <p class="mb-0">
-          &copy; 2025 Najet Ramoul — Développeuse Web Freelance
+        <div class="service-card text-center">
+        <h3>Projet STEAMER</h3>
+        <p>
+          Application web réalisée en formation. Elle met en relation des joueurs
+          via la plateforme Steam en fonction de leurs jeux communs sur les
+          15 derniers jours.
         </p>
+        <p class="text-muted">
+          <strong>Technologies :</strong> Ionic, NestJS, API Steam, MariaDB
+        </p>
+        <a href="steamer.html" target="_blank" class="btn-devis mt-3">
+          Découvrir le projet
+        </a>
       </div>
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    </div>  
+    <div class="text-center mt-5">
+      <a href="contact.html" class="btn-devis"> Discutons de votre projet </a>
+    </div>
+</section>
+<!-- FOOTER -->
+<footer class="footer text-center text-lg-start">
+  <div class="container py-5">
+    <div class="row text-center text-md-start">
+      <div class="col-md-4 mb-4">
+        <h5 class="footer-title">Coordonnées</h5>
+        <p class="footer-text">Localisation : Mulhouse</p>
+        <p class="footer-text">        
+          <a href="mailto:najet.ramoul68@gmail.com" class="footer-link">
+            najet.ramoul68@gmail.com
+          </a>
+          </p>
+          <p class="footer-text">
+            <a href="tel:0659579562" class="footer-link"> 06 59 57 95 62 </a>
+          </p>
+      </div>
+      <div class="col-md-4 mb-4">     
+        <h5 class="footer-title">Navigation</h5>
+        <ul class="list-unstyled footer-list">         
+          <li><a href="index.html" class="footer-link">Accueil</a></li>
+          <li><a href="services.html" class="footer-link">Services</a></li>
+          <li><a href="projets.html" class="footer-link">Projets</a></li>
+          <li><a href="about.html" class="footer-link">À propos</a></li>
+          <li><a href="contact.html" class="footer-link">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4 mb-4">
+        <h5 class="footer-title">Infos pratiques</h5>
+        <ul class="list-unstyled footer-list">
+          <li><a href="#" class="footer-link">Mentions légales</a></li>
+          <li><a href="#" class="footer-link">Confidentialité</a></li>
+          <li><a href="#" class="footer-link">Cookies</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer py-3 text-center">
+    <p class="mb-0">
+      &copy; 2025 Najet Ramoul — Développeuse Web Freelance
+    </p>
+  </div>
+</footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
