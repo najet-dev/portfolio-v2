@@ -61,70 +61,80 @@
             <a class="nav-link" href="services.html">Services</a>
             <a class="nav-link" href="projets.html">Réalisations</a>
             <a class="nav-link" href="about.html">À propos</a>
-            <a class="nav-link" href="contact.html">Contact</a>
+            <a class="nav-link active" href="contact.html">Contact</a>
           </div>
         </div>
       </div>
     </nav>
+
     <!-- Section Contact -->
-    <section id="contact" class="container-fluid py-5">
-      <div class="text-center mb-4">
-        <h2 class="title">Contact</h2>
-        <div class="divider mx-auto my-3"></div>
-        <p class="text-muted">Une idée, un projet ? Discutons-en.</p>
+    <!-- ================= CONTACT ================= -->
+    <section id="contact-page">
+      <!-- BANDEAU TITRE -->
+      <div class="section-title-bg">
+        <h1>Contact</h1>
       </div>
-      <form
-        action="https://formspree.io/f/mvgaejep"
-        method="POST"
-        class="mx-auto"
-        style="max-width: 600px"
-      >
-        <div class="mb-3">
-          <input
-            type="text"
-            placeholder="Nom"
-            class="form-control"
-            id="name"
-            name="Nom"
-            required
-          />
-        </div>
-        <div class="mb-3">
-          <input
-            type="text"
-            placeholder="Prénom"
-            class="form-control"
-            id="firstName"
-            name="Prénom"
-            required
-          />
-        </div>
-        <div class="mb-3">
-          <input
-            type="email"
-            placeholder="Email"
-            class="form-control"
-            id="email"
-            name="Email"
-            required
-          />
-        </div>
-        <div class="mb-3">
-          <textarea
-            class="form-control"
-            placeholder="Message"
-            id="message"
-            name="Message"
-            rows="5"
-            required
-          ></textarea>
-        </div>
-        <!-- Anti-spam -->
-        <input type="text" name="_gotcha" style="display: none" />
-        <div class="text-center">
-          <button type="submit" class="btn devis submit">Envoyer</button>
-        </div>
-      </form>
+
+      <!-- CONTENU -->
+      <div class="container">
+        <p class="subtitle text-center mb-5">
+          Une idée, un projet ? Discutons-en.
+        </p>
+
+        <form
+          action="https://formspree.io/f/mvgaejep"
+          method="POST"
+          class="mx-auto"
+          style="max-width: 600px"
+        >
+          <div class="mb-3">
+            <input
+              type="text"
+              placeholder="Nom"
+              class="form-control"
+              name="Nom"
+              required
+            />
+          </div>
+
+          <div class="mb-3">
+            <input
+              type="text"
+              placeholder="Prénom"
+              class="form-control"
+              name="Prénom"
+              required
+            />
+          </div>
+
+          <div class="mb-3">
+            <input
+              type="email"
+              placeholder="Email"
+              class="form-control"
+              name="Email"
+              required
+            />
+          </div>
+
+          <div class="mb-3">
+            <textarea
+              class="form-control"
+              placeholder="Message"
+              name="Message"
+              rows="5"
+              required
+            ></textarea>
+          </div>
+
+          <!-- Anti-spam -->
+          <input type="text" name="_gotcha" style="display: none" />
+
+          <div class="text-center mt-4">
+            <button type="submit" class="btn devis">Envoyer</button>
+          </div>
+        </form>
+      </div>
     </section>
 
     <!-- Footer -->

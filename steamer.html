@@ -24,10 +24,12 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body data-bs-target="#myNavbar">
-    <div id="aPropos"></div>
-    <nav id="myNavbar" class="navbar navbar-expand-lg navbar-light sticky-top">
+    <nav id="myNavbar" class="navbar navbar-expand-lg">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#"></a>
+        <!-- Logo à gauche -->
+        <a class="navbar-brand" href="#"> bloomviaDigital </a>
+
+        <!-- Bouton pour petits écrans -->
         <button
           class="navbar-toggler"
           type="button"
@@ -39,102 +41,102 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+
+        <!-- Liens à droite -->
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNavAltMarkup"
+        >
           <div class="navbar-nav">
-            <a class="nav-link" href="#aPropos">Moi</a>
-            <a class="nav-link" href="#competences">Compétences</a>
-            <a class="nav-link active" aria-current="page" href="#portfolio"
-              >Portfolio</a
+            <a class="nav-link" aria-current="page" href="index.html"
+              >Accueil</a
             >
-          </div>
-          <div class="navbar-nav">
-            <div class="footer-links">
-              <a
-                href="https://www.linkedin.com/in/najet-ramoul-312845233/"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="linkedin-link"
-              >
-                <i class="bi bi-linkedin"></i>
-              </a>
-              <a
-                href="https://github.com/najet-dev"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="github-link"
-              >
-                <i class="bi bi-github"></i>
-              </a>
-            </div>
+            <a class="nav-link" href="services.html">Services</a>
+            <a class="nav-link" href="projets.html">Réalisations</a>
+            <a class="nav-link" href="about.html">À propos</a>
+            <a class="nav-link" href="contact.html">Contact</a>
           </div>
         </div>
       </div>
     </nav>
+
     <!-- Section projet -->
-    <div class="container project-section">
-      <div class="row align-items-center">
-        <a
-          href="index.html"
-          class="return-link"
-          title="Retour à l'accueil du portfolio"
-        >
-          <i class="fas fa-arrow-left"></i> Retour
+    <section class="project-hero">
+      <div class="container">
+        <a href="projets.html" class="return-link">
+          <i class="fas fa-arrow-left"></i> Retour aux réalisations
         </a>
+        <h1>Application Steamer</h1>
+      </div>
+    </section>
 
-        <!-- Colonne gauche : texte -->
-        <div class="col-lg-8 project-text">
-          <h2>Informations générales</h2>
-          <p><strong>- Entreprise :</strong> Mithra Production</p>
-          <p><strong>- Durée :</strong> 6 semaines</p>
-          <p>
-            <strong>- Technologies :</strong> Ionic (Frontend), NestJS
-            (Backend), MariaDB
-          </p>
+    <section class="project-intro">
+      <div class="container">
+        <p class="project-subtitle">Application mobile développée en équipe</p>
 
-          <h2>Méthodologie Agile</h2>
-          <p>
-            Projet mené en équipe de 5 personnes selon
-            <strong>la méthode Scrum</strong>. Les sprints hebdomadaires ont
-            favorisé une <strong>adaptation continue</strong> aux évolutions du
-            projet et la <strong>livraison régulière</strong> de fonctionnalités
-            opérationnelles.
-          </p>
-
-          <h2>Outils de développement</h2>
-          <p><strong>- Confluence</strong> pour la documentation</p>
-          <p><strong>- Jira</strong> pour le suivi des tâches</p>
-          <p><strong>- Git</strong> pour le versioning</p>
-
-          <h2>Mes réalisations</h2>
-          <p>- Conception de la <strong>page de profil</strong> utilisateur</p>
-          <p>
-            - Création de la page <strong>« Favoris »</strong> avec badges
-            dynamiques
-          </p>
-          <p>- Gestion des <strong>likes, dislikes, matchs</strong></p>
-          <p>
-            - Suppression automatique des <strong>dislikes</strong> après 30
-            jours
-          </p>
-        </div>
-
-        <!-- Colonne droite : images -->
-        <div
-          class="col-lg-4 project-images d-flex flex-lg-column flex-row justify-content-between gap-3 flex-wrap"
-        >
-          <img
-            src="images/swipe.png"
-            alt="Aperçu swipe"
-            class="img-fluid rounded shadow custom-img"
-          />
-          <img
-            src="images/profil.png"
-            alt="Aperçu profil"
-            class="img-fluid rounded shadow custom-img"
-          />
+        <div class="project-meta">
+          <span><strong>Entreprise :</strong> Mithra Production</span>
+          <span><strong>Durée :</strong> 6 semaines</span>
+          <span><strong>Tech :</strong> Ionic, NestJS, MariaDB</span>
         </div>
       </div>
-    </div>
+    </section>
+
+    <section class="project-content">
+      <div class="container">
+        <div class="project-inline">
+          <div class="inline-text">
+            <h2>Contexte du projet</h2>
+            <p>
+              Steamer est une application mobile développée dans un cadre
+              professionnel visant à faciliter les interactions entre joueurs
+              grâce à un système de matching intelligent.
+            </p>
+          </div>
+
+          <div class="inline-image">
+            <img src="images/swipe.png" alt="Interface swipe Steamer" />
+          </div>
+        </div>
+
+        <div class="project-inline reverse">
+          <div class="inline-text">
+            <h2>Mes réalisations</h2>
+            <ul>
+              <li>Conception de la page profil utilisateur</li>
+              <li>Création de la page Favoris avec badges dynamiques</li>
+              <li>Gestion des likes, dislikes et matchs</li>
+              <li>Suppression automatique des dislikes après 30 jours</li>
+            </ul>
+          </div>
+
+          <div class="inline-image">
+            <img src="images/profil.png" alt="Profil utilisateur Steamer" />
+          </div>
+        </div>
+
+        <div class="project-inline">
+          <div class="inline-text">
+            <h2>Méthodologie Agile</h2>
+            <p>
+              Projet mené en équipe de 5 personnes selon la méthode
+              <strong>Scrum</strong>. Les sprints hebdomadaires ont permis une
+              adaptation continue et une livraison régulière de fonctionnalités.
+            </p>
+          </div>
+        </div>
+
+        <h2>Outils & technologies</h2>
+        <ul class="tech-list">
+          <li>Ionic</li>
+          <li>NestJS</li>
+          <li>MariaDB</li>
+          <li>Git</li>
+          <li>Jira</li>
+          <li>Confluence</li>
+        </ul>
+      </div>
+    </section>
 
     <!-- Footer -->
     <footer class="footer text-center text-lg-start">
@@ -143,14 +145,12 @@
           <!-- Coordonnées -->
           <div class="col-md-4 mb-4">
             <h5 class="footer-title">Coordonnées</h5>
-            <p class="footer-text">Muhouse</p>
+            <p class="footer-text">Localisation : Muhouse</p>
             <p class="footer-text">
-              <a href="mailto:rams2012@hotmail.fr" class="footer-link"
-                >rams2012@hotmail.fr</a
-              >
+              <a href="" class="footer-link">najet.ramoul68@gmail.com</a>
             </p>
             <p class="footer-text">
-              <a href="tel:0781021037" class="footer-link">07 81 02 10 37</a>
+              <a href="tel:0659579562" class="footer-link">06 59 57 95 62</a>
             </p>
           </div>
 
@@ -181,7 +181,7 @@
               <li><a href="#" class="footer-link">Politique de Cookies</a></li>
               <li>
                 <a href="#" class="footer-link"
-                  >Conditions Générales d’Utilisation</a
+                  >Conditions Générales d'Utilisation</a
                 >
               </li>
               <li><a href="#" class="footer-link">Plan du site</a></li>
