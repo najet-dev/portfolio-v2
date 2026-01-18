@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
   <head>
     <title>
@@ -92,8 +92,8 @@
               Des sites web professionnels pour développer votre activité.
             </p>
             <p class="hero-text">
-              J'aide les indépendants, artisans et petites entreprises à créer
-              un site web clair, moderne et efficace.
+              J'aide les indépendants, artisans et entreprises à créer un site
+              web clair, moderne et efficace.
             </p>
             <a href="contact.html" class="btn devis btn-lg">
               Demandez un devis
@@ -250,7 +250,7 @@
           <img
             src="images/portfolo.jpg"
             class="img-fluid"
-            alt="Najet Ramoul – Développeuse web freelance"
+            alt="Najet Ramoul - Développeuse web freelance"
           />
         </div>
 
@@ -263,13 +263,13 @@
             <strong
               >conception de sites web modernes, performants et parfaitement
               adaptés à vos besoins</strong
-            >, j’accompagne les artisans, indépendants et petites entreprises
-            dans la valorisation de leur activité en ligne.
+            >, j'accompagne les artisans, indépendants et entreprises dans la
+            valorisation de leur activité en ligne.
           </p>
 
           <p class="about">
             Mon approche repose sur une écoute attentive, une conception sur
-            mesure et une attention particulière portée à l’<strong
+            mesure et une attention particulière portée à l'<strong
               >ergonomie</strong
             >
             comme à la <strong>performance</strong>. Chaque projet est pensé
@@ -294,14 +294,14 @@
           <div class="col-md-4 mb-4">
             <h5 class="footer-title">Coordonnées</h5>
             <p class="footer-text">Localisation : Mulhouse</p>
-            <p class="footer-text">
-              <a href="mailto:rams2012@hotmail.fr" class="footer-link"
-                >najet.ramoul68@gmail.com</a
-              >
-            </p>
-            <p class="footer-text">
-              <a href="tel:0781021037" class="footer-link">06 59 57 95 62</a>
-            </p>
+            <div class="footer-text">
+              <p href="mailto:najet.ramoul68@gmail.com">
+                najet.ramoul68@gmail.com
+              </p>
+            </div>
+            <div class="footer-text">
+              <p href="tel:0659579562">06 59 57 95 62</p>
+            </div>
           </div>
 
           <!-- Navigation -->
@@ -311,10 +311,10 @@
               <li><a href="index.html" class="footer-link">Accueil</a></li>
               <li><a href="services.html" class="footer-link">Services</a></li>
               <li>
-                <a href="index.html#portfolio" class="footer-link">Portfolio</a>
+                <a href="projets.html" class="footer-link">Réalisations</a>
               </li>
               <li>
-                <a href="index.html#aPropos" class="footer-link">À propos</a>
+                <a href="about.html" class="footer-link">À propos</a>
               </li>
               <li><a href="contact.html" class="footer-link">Contact</a></li>
             </ul>
@@ -324,17 +324,26 @@
           <div class="col-md-4 mb-4">
             <h5 class="footer-title">Infos Pratiques</h5>
             <ul class="list-unstyled footer-list">
-              <li><a href="#" class="footer-link">Mentions Légales</a></li>
               <li>
-                <a href="#" class="footer-link">Politique de Confidentialité</a>
+                <a href="legalNotice.html" class="footer-link"
+                  >Mentions Légales</a
+                >
               </li>
-              <li><a href="#" class="footer-link">Politique de Cookies</a></li>
               <li>
-                <a href="#" class="footer-link"
+                <a href="privacyPolicy.html" class="footer-link"
+                  >Politique de Confidentialité</a
+                >
+              </li>
+              <li>
+                <a href="cookiesPolicy.html" class="footer-link"
+                  >Politique de cookies</a
+                >
+              </li>
+              <li>
+                <a href="cgu.html" class="footer-link"
                   >Conditions Générales d'Utilisation</a
                 >
               </li>
-              <li><a href="#" class="footer-link">Plan du site</a></li>
             </ul>
           </div>
         </div>
@@ -346,6 +355,68 @@
         </p>
       </div>
     </footer>
+    <!-- COOKIE POPUP -->
+    <div id="cookie-overlay" class="cookie-overlay">
+      <div class="cookie-box">
+        <span class="cookie-close" id="cookie-close">&times;</span>
+        <!-- VUE INFO -->
+        <div id="cookie-info" class="cookie-view active">
+          <h3>Gestion des cookies</h3>
+
+          <p>
+            Nous utilisons des cookies pour améliorer votre expérience et
+            analyser le trafic du site. Vous pouvez accepter, refuser ou
+            personnaliser vos choix.
+          </p>
+
+          <div class="cookie-actions">
+            <button class="btn-cookie btn-outline" id="cookie-settings-btn">
+              Paramétrer
+            </button>
+            <button class="btn-cookie btn-light" id="cookie-refuse">
+              Refuser
+            </button>
+            <button class="btn-cookie btn-primary" id="cookie-accept">
+              Accepter
+            </button>
+          </div>
+          <div class="cookie-links">
+            <a href="cookiesPolicy.html">Politique de cookies</a>
+            <a href="privacyPolicy.html">Politique de Confidentialité</a>
+          </div>
+        </div>
+
+        <!-- VUE PARAMÈTRES -->
+        <div id="cookie-settings" class="cookie-view">
+          <h3>Préférences des cookies</h3>
+
+          <div class="cookie-option">
+            <label>
+              <input type="checkbox" checked disabled />
+              Cookies essentiels
+            </label>
+            <p>Nécessaires au bon fonctionnement du site.</p>
+          </div>
+
+          <div class="cookie-option">
+            <label>
+              <input type="checkbox" id="analyticsCookies" />
+              Cookies analytiques
+            </label>
+            <p>Nous aident à comprendre l'utilisation du site.</p>
+          </div>
+
+          <div class="cookie-actions two-buttons">
+            <button class="btn-cookie btn-secondary" id="cookie-back">
+              Retour
+            </button>
+            <button class="btn-cookie btn-primary" id="cookie-save">
+              Enregistrer
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script src="script.js"></script>
   </body>
