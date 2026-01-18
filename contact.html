@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
@@ -25,7 +25,6 @@
       rel="stylesheet"
     />
 
-    <!-- Tes styles -->
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="contact.css" />
   </head>
@@ -66,74 +65,94 @@
         </div>
       </div>
     </nav>
-
     <!-- Section Contact -->
-    <!-- ================= CONTACT ================= -->
     <section id="contact-page">
-      <!-- BANDEAU TITRE -->
       <div class="section-title-bg">
         <h1>Contact</h1>
       </div>
-
       <!-- CONTENU -->
-      <div class="container">
-        <p class="subtitle text-center mb-5">
-          Une idée, un projet ? Discutons-en.
-        </p>
+      <div class="container contact-container">
+        <!-- Intro top -->
+        <div class="contact-top">
+          <h2>Discutons de votre projet</h2>
+          <p>
+            Vous avez une idée, un besoin ou un projet web ? Je vous accompagne
+            pour créer une présence en ligne claire, moderne et efficace.
+          </p>
+        </div>
 
-        <form
-          action="https://formspree.io/f/mvgaejep"
-          method="POST"
-          class="mx-auto"
-          style="max-width: 600px"
-        >
-          <div class="mb-3">
-            <input
-              type="text"
-              placeholder="Nom"
-              class="form-control"
-              name="Nom"
-              required
-            />
+        <!-- Grid -->
+        <div class="contact-grid">
+          <!-- Infos -->
+          <div class="contact-info">
+            <p>
+              <i class="fa-solid fa-location-dot"></i>
+              Mulhouse
+            </p>
+
+            <p>
+              <i class="fa-solid fa-envelope"></i>
+              <a href="mailto:najet.ramoul68@gmail.com">
+                najet.ramoul68@gmail.com
+              </a>
+            </p>
+
+            <p>
+              <i class="fa-solid fa-phone"></i>
+              <a href="tel:0659579562"> 06&nbsp;59&nbsp;57&nbsp;95&nbsp;62 </a>
+            </p>
           </div>
 
-          <div class="mb-3">
-            <input
-              type="text"
-              placeholder="Prénom"
-              class="form-control"
-              name="Prénom"
-              required
-            />
-          </div>
+          <!-- Form -->
+          <form
+            action="https://formspree.io/f/mvgaejep"
+            method="POST"
+            class="contact-form"
+          >
+            <div class="mb-3">
+              <input
+                type="text"
+                placeholder="Nom"
+                class="form-control"
+                name="Nom"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <input
+                type="text"
+                placeholder="Prénom"
+                class="form-control"
+                name="Prénom"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <input
+                type="email"
+                placeholder="Email"
+                class="form-control"
+                name="Email"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <textarea
+                class="form-control"
+                placeholder="Votre message"
+                name="Message"
+                rows="5"
+                required
+              ></textarea>
+            </div>
 
-          <div class="mb-3">
-            <input
-              type="email"
-              placeholder="Email"
-              class="form-control"
-              name="Email"
-              required
-            />
-          </div>
+            <input type="text" name="_gotcha" style="display: none" />
 
-          <div class="mb-3">
-            <textarea
-              class="form-control"
-              placeholder="Message"
-              name="Message"
-              rows="5"
-              required
-            ></textarea>
-          </div>
-
-          <!-- Anti-spam -->
-          <input type="text" name="_gotcha" style="display: none" />
-
-          <div class="text-center mt-4">
-            <button type="submit" class="btn devis">Envoyer</button>
-          </div>
-        </form>
+            <div class="text-center mt-4">
+              <button type="submit" class="btn devis">Envoyer</button>
+            </div>
+          </form>
+        </div>
       </div>
     </section>
 
@@ -144,15 +163,15 @@
           <!-- Coordonnées -->
           <div class="col-md-4 mb-4">
             <h5 class="footer-title">Coordonnées</h5>
-            <p class="footer-text">Localisation : Muhouse</p>
-            <p class="footer-text">
-              <a href="email" class="footer-link">najet.ramoul68@gmail.com</a>
-            </p>
-            <p class="footer-text">
-              <a href="telephone" class="footer-link"
-                >Télephone : 06 59 57 95 62</a
-              >
-            </p>
+            <p class="footer-text">Localisation : Mulhouse</p>
+            <div class="footer-text">
+              <p href="mailto:najet.ramoul68@gmail.com">
+                najet.ramoul68@gmail.com
+              </p>
+            </div>
+            <div class="footer-text">
+              <p href="tel:0659579562">06 59 57 95 62</p>
+            </div>
           </div>
 
           <!-- Navigation -->
@@ -162,10 +181,10 @@
               <li><a href="index.html" class="footer-link">Accueil</a></li>
               <li><a href="services.html" class="footer-link">Services</a></li>
               <li>
-                <a href="index.html#portfolio" class="footer-link">Portfolio</a>
+                <a href="projets.html" class="footer-link">Réalisations</a>
               </li>
               <li>
-                <a href="index.html#aPropos" class="footer-link">À propos</a>
+                <a href="about.html" class="footer-link">À propos</a>
               </li>
               <li><a href="contact.html" class="footer-link">Contact</a></li>
             </ul>
@@ -175,17 +194,26 @@
           <div class="col-md-4 mb-4">
             <h5 class="footer-title">Infos Pratiques</h5>
             <ul class="list-unstyled footer-list">
-              <li><a href="#" class="footer-link">Mentions Légales</a></li>
               <li>
-                <a href="#" class="footer-link">Politique de Confidentialité</a>
-              </li>
-              <li><a href="#" class="footer-link">Politique de Cookies</a></li>
-              <li>
-                <a href="#" class="footer-link"
-                  >Conditions Générales d’Utilisation</a
+                <a href="legalNotice.html" class="footer-link"
+                  >Mentions Légales</a
                 >
               </li>
-              <li><a href="#" class="footer-link">Plan du site</a></li>
+              <li>
+                <a href="privacyPolicy.html" class="footer-link"
+                  >Politique de Confidentialité</a
+                >
+              </li>
+              <li>
+                <a href="cookiesPolicy.html" class="footer-link"
+                  >Politique de cookies</a
+                >
+              </li>
+              <li>
+                <a href="cgu.html" class="footer-link"
+                  >Conditions Générales d'Utilisation</a
+                >
+              </li>
             </ul>
           </div>
         </div>
