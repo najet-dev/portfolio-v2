@@ -13,6 +13,7 @@ body {
   font-family: "Roboto", sans-serif;
   color: var(--text-dark);
   background-color: var(--white);
+  margin: 0;
 }
 
 a {
@@ -31,30 +32,78 @@ section {
 /* NAVABAR */
 .navbar {
   background-color: var(--bg-light);
-  font-weight: 600;
-  letter-spacing: 1px;
-  margin-bottom: 0;
+  padding: 10px 120px;
+}
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px; /* espace gauche et droite équilibré */
+}
+.navbar-logo {
+  height: 110px;
+  width: auto;
+  transition: transform 0.3s ease;
 }
 
-.navbar .nav-link {
+.navbar-logo:hover {
+  transform: scale(1.03);
+  opacity: 0.95;
+}
+/* Conteneur logo */
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+
+/* Menu : espacement uniforme et hover subtil */
+.navbar-nav .nav-link {
+  margin: 0 12px; /* espace entre les liens */
+  font-weight: 400; /* un peu plus marqué */
   color: var(--text-dark);
-  margin: 0 6px;
-  transition: color 0.3s ease;
+  position: relative;
+  transition:
+    color 0.3s ease,
+    transform 0.2s ease;
 }
 
-.navbar .nav-link:hover,
-.navbar .nav-link.active {
+/* Hover : subtile animation bleu */
+.navbar-nav .nav-link:hover {
   color: var(--primary);
-  position: relative;
+  transform: translateY(-2px); /* léger effet de flottement */
 }
-.navbar .nav-link.active::after {
+
+/* Lien actif : trait bleu discret */
+.navbar-nav .nav-link.active::after {
   content: "";
   position: absolute;
-  bottom: -1px;
+  bottom: -4px;
   left: 0;
   width: 100%;
   height: 2px;
   background-color: var(--primary);
+  border-radius: 2px; /* rend le trait plus doux */
+}
+
+/* Animation du trait au hover */
+.navbar-nav .nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: var(--primary);
+  border-radius: 2px;
+  transition:
+    width 0.3s ease,
+    left 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover::after {
+  width: 100%;
+  left: 0;
 }
 
 #hero {
@@ -127,15 +176,6 @@ p {
 
 /* ===== ABOUT PAGE ===== */
 
-.about-hero {
-  background: var(--bg-light);
-  padding: 90px 0 70px;
-}
-
-.about-hero h1 {
-  font-weight: 700;
-}
-
 /* CONTENT */
 .about-content {
   padding: 70px 0;
@@ -163,12 +203,21 @@ p {
 /* Work section */
 .about-work {
   display: grid;
-  grid-template-columns: 1.4fr 1fr;
-  gap: 50px;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
   align-items: center;
-  margin-bottom: 80px;
-}
 
+  max-width: 1000px;
+  margin: 0 auto 80px;
+
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+/* Texte */
+.about-work-text {
+  padding: 0;
+  margin: 0;
+}
 .about-work h3 {
   margin-bottom: 18px;
 }
@@ -176,6 +225,7 @@ p {
 .about-list {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 .about-list li {
@@ -192,13 +242,20 @@ p {
   font-size: 0.75rem;
 }
 
-/* Image */
-.about-work-image img {
-  width: 100%;
-  border-radius: 18px;
-  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.12);
+/* Image wrapper */
+.about-work-image {
+  display: flex;
+  justify-content: center;
 }
 
+/* Image intégrée au design */
+.about-work-image img {
+  width: 100%;
+  max-width: 380px;
+  border-radius: 16px;
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.1);
+  background: #fff;
+}
 /* CTA */
 .about-cta > p:first-of-type {
   text-align: center;
@@ -276,18 +333,73 @@ p {
 }
 
 /* SERVICES */
+
 .section-title-bg {
+  position: relative;
+  overflow: hidden;
   background-color: var(--bg-light);
-  padding: 70px 20px;
+  padding: 40px 30px;
   margin-bottom: 60px;
 }
 
 .section-title-bg h1 {
-  /*text-align: center;*/
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: var(--primary);
   margin: 0;
+  padding-left: 11%; /* décale le titre vers la gauche */
+  text-align: left;
+}
+.wave-wrapper {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.wave-wrapper svg {
+  display: block;
+  width: 200%;
+  height: 160px;
+}
+#projects-page {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.wave {
+  fill: var(--bg-light);
+}
+
+.wave1 {
+  fill: #ecf1f9;
+  animation: waveMove1 14s linear infinite;
+  opacity: 1;
+}
+
+.wave2 {
+  fill: var(--bg-light);
+  animation: waveMove2 20s linear infinite;
+  opacity: 0.9;
+}
+
+@keyframes waveMove1 {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes waveMove2 {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-30%);
+  }
+}
+.container {
+  text-align: center;
 }
 .services-page {
   padding-bottom: 50px;
@@ -298,10 +410,13 @@ p {
   font-weight: 700;
 }
 
-.services-page .subtitle {
+.subtitle {
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
+  line-height: 1.8;
   color: var(--text-light);
+  max-width: 770px;
+  margin: 0 auto;
 }
 
 .service-card {

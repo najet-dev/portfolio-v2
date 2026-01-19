@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
@@ -34,19 +34,31 @@
   <body>
     <!-- NAVBAR -->
     <nav id="myNavbar" class="navbar navbar-expand-lg">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">bloomviaDigital</a>
+      <div class="container-fluid navbar-container">
+        <a class="navbar-brand" href="index.html">
+          <img
+            src="images/Logo.png"
+            alt="Logo bloomviaDigital"
+            class="navbar-logo"
+          />
+        </a>
 
         <button
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse justify-content-end">
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNavAltMarkup"
+        >
           <div class="navbar-nav">
             <a class="nav-link" href="index.html">Accueil</a>
             <a class="nav-link" href="services.html">Services</a>
@@ -59,108 +71,139 @@
     </nav>
 
     <!-- SECTION PROJETS -->
-    <section class="services-page">
-    <div class="section-title-bg">
-      <h1>Mes réalisations</h1>
-    </div> 
-    <div class="container">
-      <p class="subtitle">
-        Voici quelques réalisations que j'ai conçues pour des indépendants,
-        artisans et petites entreprises.<br />
-        Chaque projet est pensé pour être clair, efficace et adapté aux besoins
-        du client.
-      </p>
+    <section id="projets-page">
+      <div class="section-title-bg">
+        <h1>Mes réalisations</h1>
+      </div>
 
-      <div class="row g-4">
-        <!-- PROJET 1 -->
-        <div class="col-md-6 col-lg-4">
-          <div class="service-card text-center"> 
-            <h3>Site vitrine pour un peintre en bâtiment</h3>
-            <p>
-              Site fictif réalisé pour un peintre en bâtiment. Présentation des services,
-              galerie photos et formulaire de contact pour les clients.
-            </p>
-            <p class="text-muted">
-              <strong>Technologies :</strong> HTML, CSS, JavaScript, Bootstrap
-            </p>           
-            <a href="https://palette.najet-ramoul.com/" target="_blank" class="btn-devis mt-3">
-              Découvrir le site
-            </a>
+      <div class="container">
+        <p class="subtitle">
+          Voici quelques réalisations que j'ai conçues pour des indépendants,
+          artisans et petites entreprises.<br />
+          Chaque projet est pensé pour être clair, efficace et adapté aux
+          besoins du client.
+        </p>
+
+        <div class="row g-4">
+          <!-- PROJET 1 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="service-card text-center">
+              <h3>Site vitrine pour un peintre en bâtiment</h3>
+              <p>
+                Site fictif réalisé pour un peintre en bâtiment. Présentation
+                des services, galerie photos et formulaire de contact pour les
+                clients.
+              </p>
+              <p class="text-muted">
+                <strong>Technologies :</strong> HTML, CSS, JavaScript, Bootstrap
+              </p>
+              <a
+                href="https://palette.najet-ramoul.com/"
+                target="_blank"
+                class="btn-devis mt-3"
+              >
+                Découvrir le site
+              </a>
+            </div>
+          </div>
+
+          <!-- PROJET 2 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="service-card text-center">
+              <h3>Site e-commerce</h3>
+              <p>
+                Projet personnel de développement d’une boutique en ligne
+                responsive avec gestion de panier, authentification utilisateur
+                et simulation de paiement.
+              </p>
+              <p class="text-muted">
+                <strong>Technologies :</strong> Angular, Spring Boot, MySQL
+              </p>
+              <a
+                href="https://etherea.najet-ramoul.com"
+                target="_blank"
+                class="btn-devis mt-3"
+              >
+                Découvrir le site
+              </a>
+            </div>
+          </div>
+
+          <!-- PROJET 3 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="service-card text-center">
+              <h3>La boîte à outils</h3>
+              <p>
+                Projet réalisé en stage pour l'Université de Haute-Alsace.
+                Plateforme proposant des outils pédagogiques innovants destinés
+                aux enseignants.
+              </p>
+              <p class="text-muted">
+                <strong>Technologies :</strong> PHP, JavaScript, WordPress
+              </p>
+              <a
+                href="https://www.outils-pedagogie.novatris.uha.fr/"
+                target="_blank"
+                class="btn-devis mt-3"
+              >
+                Découvrir le site
+              </a>
+            </div>
+          </div>
+
+          <!-- PROJET 4 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="service-card text-center">
+              <h3>Projet STEAMER</h3>
+              <p>
+                Application web réalisée en formation. Elle met en relation des
+                joueurs via la plateforme Steam en fonction de leurs jeux
+                communs sur les 15 derniers jours.
+              </p>
+              <p class="text-muted">
+                <strong>Technologies :</strong> Ionic, NestJS, API Steam,
+                MariaDB
+              </p>
+              <a href="steamer.html" class="btn-devis mt-3">
+                Découvrir le projet
+              </a>
+            </div>
           </div>
         </div>
-        <!-- PROJET 1 -->
-        <div class="col-md-6 col-lg-4">        
-          <div class="service-card text-center">
-            <h3>Site e-commerce</h3>
-            <p>
-              Projet personnel de développement d’une boutique en ligne responsive avec
-              gestion de panier, authentification utilisateur et simulation de paiement.
-            </p>
-            <p class="text-muted">
-              <strong>Technologies :</strong> Angular, Spring Boot, MySQL
-            </p>
-            <a  href="https://etherea.najet-ramoul.com" target="_blank" class="btn-devis mt-3">
-              Découvrir le site
-            </a>
-        </div>
-      </div>
-      <!-- PROJET 2 -->
-      <div class="col-md-6 col-lg-4">
-        <div class="service-card text-center">    
-          <h3>La boîte à outils</h3>
-          <p>
-            Projet réalisé en stage pour l'Université de Haute-Alsace.
-            Plateforme proposant des outils pédagogiques innovants destinés
-            aux enseignants.
-          </p>
-          <p class="text-muted">
-            <strong>Technologies :</strong> PHP, JavaScript, WordPress
-          </p>
-          <a href="https://www.outils-pedagogie.novatris.uha.fr/" target="_blank" class="btn-devis mt-3">
-            Découvrir le site
+
+        <div class="text-center mt-5">
+          <a href="contact.html" class="btn-devis">
+            Discutons de votre projet
           </a>
         </div>
-       </div>
-        <!-- PROJET 3 -->
-        <div class="col-md-6 col-lg-4">
-        <div class="service-card text-center">
-        <h3>Projet STEAMER</h3>
-        <p>
-          Application web réalisée en formation. Elle met en relation des joueurs
-          via la plateforme Steam en fonction de leurs jeux communs sur les
-          15 derniers jours.
-        </p>
-        <p class="text-muted">
-          <strong>Technologies :</strong> Ionic, NestJS, API Steam, MariaDB
-        </p>
-        <a href="steamer.html" target="_blank" class="btn-devis mt-3">
-          Découvrir le projet
-        </a>
       </div>
-    </div>  
-    <div class="text-center mt-5">
-      <a href="contact.html" class="btn-devis"> Discutons de votre projet </a>
-    </div>
-</section>
- <!-- Footer -->
+
+      <!-- WAVE FULL WIDTH -->
+      <div class="wave-wrapper">
+        <svg viewBox="0 0 1440 160" preserveAspectRatio="none">
+          <path
+            class="wave wave1"
+            d="M0,90 C240,140 480,40 720,70 960,90 1200,120 1440,70 L1440,160 L0,160 Z"
+          />
+          <path
+            class="wave wave2"
+            d="M0,100 C240,120 480,60 720,90 960,110 1200,140 1440,90 L1440,160 L0,160 Z"
+          />
+        </svg>
+      </div>
+    </section>
+
+    <!-- Footer -->
     <footer class="footer text-center text-lg-start">
       <div class="container py-5">
         <div class="row text-center text-md-start">
-          <!-- Coordonnées -->
           <div class="col-md-4 mb-4">
             <h5 class="footer-title">Coordonnées</h5>
             <p class="footer-text">Localisation : Mulhouse</p>
-            <div class="footer-text">
-              <p href="mailto:najet.ramoul68@gmail.com">
-                najet.ramoul68@gmail.com
-              </p>
-            </div>
-            <div class="footer-text">
-              <p href="tel:0659579562">06 59 57 95 62</p>
-            </div>
+            <p class="footer-text">najet.ramoul68@gmail.com</p>
+            <p class="footer-text">06 59 57 95 62</p>
           </div>
 
-          <!-- Navigation -->
           <div class="col-md-4 mb-4">
             <h5 class="footer-title">Navigation</h5>
             <ul class="list-unstyled footer-list">
@@ -169,14 +212,11 @@
               <li>
                 <a href="projets.html" class="footer-link">Réalisations</a>
               </li>
-              <li>
-                <a href="about.html" class="footer-link">À propos</a>
-              </li>
+              <li><a href="about.html" class="footer-link">À propos</a></li>
               <li><a href="contact.html" class="footer-link">Contact</a></li>
             </ul>
           </div>
 
-          <!-- Infos Pratiques -->
           <div class="col-md-4 mb-4">
             <h5 class="footer-title">Infos Pratiques</h5>
             <ul class="list-unstyled footer-list">
@@ -186,19 +226,19 @@
                 >
               </li>
               <li>
-                <a href="privacyPolicy.html" class="footer-link"
-                  >Politique de Confidentialité</a
-                >
+                <a href="privacyPolicy.html" class="footer-link">
+                  Politique de Confidentialité
+                </a>
               </li>
               <li>
-                <a href="cookiesPolicy.html" class="footer-link"
-                  >Politique de cookies</a
-                >
+                <a href="cookiesPolicy.html" class="footer-link">
+                  Politique de cookies
+                </a>
               </li>
               <li>
-                <a href="cgu.html" class="footer-link"
-                  >Conditions Générales d'Utilisation</a
-                >
+                <a href="cgu.html" class="footer-link">
+                  Conditions Générales d'Utilisation
+                </a>
               </li>
             </ul>
           </div>
@@ -211,6 +251,7 @@
         </p>
       </div>
     </footer>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
