@@ -12,7 +12,6 @@
 body {
   font-family: "Roboto", sans-serif;
   color: var(--text-dark);
-  background-color: var(--white);
   margin: 0;
 }
 
@@ -30,16 +29,26 @@ section {
 }
 
 /* NAVABAR */
-.navbar {
+/* NAVBAR */
+#myNavbar {
   background-color: var(--bg-light);
   padding: 10px 120px;
 }
+
 .navbar-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 40px; /* espace gauche et droite équilibré */
+  padding: 0 40px;
+  background-color: var(--bg-light);
 }
+
+/* Corrige bootstrap */
+#myNavbar .navbar-collapse {
+  background-color: var(--bg-light);
+}
+
+/* Logo */
 .navbar-logo {
   height: 110px;
   width: auto;
@@ -50,17 +59,11 @@ section {
   transform: scale(1.03);
   opacity: 0.95;
 }
-/* Conteneur logo */
-.navbar-brand {
-  display: flex;
-  align-items: center;
-  padding: 0;
-}
 
-/* Menu : espacement uniforme et hover subtil */
+/* Liens */
 .navbar-nav .nav-link {
-  margin: 0 12px; /* espace entre les liens */
-  font-weight: 400; /* un peu plus marqué */
+  margin: 0 12px;
+  font-weight: 400;
   color: var(--text-dark);
   position: relative;
   transition:
@@ -68,13 +71,12 @@ section {
     transform 0.2s ease;
 }
 
-/* Hover : subtile animation bleu */
 .navbar-nav .nav-link:hover {
   color: var(--primary);
-  transform: translateY(-2px); /* léger effet de flottement */
+  transform: translateY(-2px);
 }
 
-/* Lien actif : trait bleu discret */
+/* actif */
 .navbar-nav .nav-link.active::after {
   content: "";
   position: absolute;
@@ -83,10 +85,10 @@ section {
   width: 100%;
   height: 2px;
   background-color: var(--primary);
-  border-radius: 2px; /* rend le trait plus doux */
+  border-radius: 2px;
 }
 
-/* Animation du trait au hover */
+/* animation */
 .navbar-nav .nav-link::after {
   content: "";
   position: absolute;
@@ -174,11 +176,12 @@ p {
   margin: 30px auto;
 }
 
-/* ===== ABOUT PAGE ===== */
+/* ABOUT PAGE */
 
 /* CONTENT */
 .about-content {
-  padding: 70px 0;
+  padding-top: 1.5rem;
+  padding-bottom: 4rem;
 }
 
 /* Intro */
@@ -338,8 +341,7 @@ p {
   position: relative;
   overflow: hidden;
   background-color: var(--bg-light);
-  padding: 40px 30px;
-  margin-bottom: 60px;
+  margin-bottom: 0;
 }
 
 .section-title-bg h1 {
@@ -347,60 +349,12 @@ p {
   padding-left: 11%; /* décale le titre vers la gauche */
   text-align: left;
 }
-.wave-wrapper {
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  line-height: 0;
+
+#services-page .breadcrumb-custom {
+  margin-top: 0;
+  margin-bottom: 12px;
 }
 
-.wave-wrapper svg {
-  display: block;
-  width: 200%;
-  height: 160px;
-}
-#projects-page {
-  padding-left: 0;
-  padding-right: 0;
-}
-
-.wave {
-  fill: var(--bg-light);
-}
-
-.wave1 {
-  fill: #ecf1f9;
-  animation: waveMove1 14s linear infinite;
-  opacity: 1;
-}
-
-.wave2 {
-  fill: var(--bg-light);
-  animation: waveMove2 20s linear infinite;
-  opacity: 0.9;
-}
-
-@keyframes waveMove1 {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-50%);
-  }
-}
-
-@keyframes waveMove2 {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-30%);
-  }
-}
-.container {
-  text-align: center;
-}
 .services-page {
   padding-bottom: 50px;
 }
@@ -417,6 +371,7 @@ p {
   color: var(--text-light);
   max-width: 770px;
   margin: 0 auto;
+  padding-bottom: 50px;
 }
 
 .service-card {
@@ -437,15 +392,48 @@ p {
   color: var(--accent);
   margin-bottom: 20px;
 }
-/* Page projet*/
+
 .service-card .text-muted {
   font-size: 0.95rem;
   margin-top: 10px;
 }
+/* ===== PAGE REALISATIONS ===== */
+
+.projets-content {
+  padding-top: 20px;
+  padding-bottom: 80px;
+}
+
+#projets-page .subtitle {
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+#projets-page .service-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+#projets-page .service-card h3 {
+  font-size: 1.15rem;
+  margin-bottom: 12px;
+}
+
+#projets-page .service-card p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+#projets-page .btn-devis {
+  align-self: center;
+  margin-top: auto;
+}
 
 /* CONTACT PAGE */
 .contact-container {
-  padding-top: 4rem;
+  padding-top: 1.5rem;
   padding-bottom: 4rem;
 }
 
@@ -517,7 +505,59 @@ p {
   border-color: var(--accent);
   box-shadow: 0 0 0 0.15rem rgba(255, 107, 107, 0.25);
 }
+/*Wave*/
 
+.wave-wrapper {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.wave-wrapper svg {
+  display: block;
+  width: 200%;
+  height: 160px;
+}
+#projects-page {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.wave {
+  fill: var(--bg-light);
+}
+
+.wave1 {
+  fill: #ecf1f9;
+  animation: waveMove1 14s linear infinite;
+  opacity: 1;
+}
+
+.wave2 {
+  fill: var(--bg-light);
+  animation: waveMove2 20s linear infinite;
+  opacity: 0.9;
+}
+
+@keyframes waveMove1 {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes waveMove2 {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-30%);
+  }
+}
 /* FOOTER */
 .footer {
   background-color: var(--bg-light);
@@ -536,44 +576,67 @@ p {
 .footer-link:hover {
   color: var(--accent);
 }
+
 /* PAGE PROJET – STEAMER */
-.project-hero {
+/* ===== PAGE STRUCTURE COMMUNE ===== */
+
+.page-hero {
   background: var(--bg-light);
-  padding: 70px 0 40px;
+  padding: 60px 0 30px;
+}
+
+.page-hero h1 {
+  font-weight: 700;
+  margin: 0;
+}
+
+.page-intro {
+  padding: 25px 0 20px;
+}
+
+.page-intro .breadcrumb-custom {
+  margin-bottom: 12px;
 }
 
 .project-hero h1 {
   font-weight: 700;
-  margin-top: 20px;
+  margin: 0;
 }
 
-.return-link {
-  display: inline-block;
-  margin-bottom: 15px;
-  color: var(--accent);
-  font-weight: 500;
-  text-decoration: none;
-}
+/*BREADCRUMB */
 
-/* INTRO */
-
-.project-intro {
-  padding: 20px 0 15px;
-}
-
-.project-subtitle {
-  font-size: 1.1rem;
+.breadcrumb-custom {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.9rem;
+  margin-bottom: 12px;
   color: var(--text-light);
-  max-width: 700px;
-  margin-bottom: 20px;
 }
+
+.breadcrumb-custom a {
+  color: var(--text-dark);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.breadcrumb-custom a:hover {
+  color: var(--primary);
+}
+
+.breadcrumb-custom .current {
+  color: var(--accent);
+}
+
+/* ===== META ===== */
 
 .project-meta {
   display: flex;
-  gap: 20px;
+  gap: 19px;
   flex-wrap: wrap;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   color: var(--text-light);
+  margin-bottom: 25px;
 }
 
 .project-meta span {
@@ -585,11 +648,12 @@ p {
 /* CONTENT */
 
 .project-content {
-  padding: 80px 0;
+  padding: 60px 0;
 }
 
 .project-content h2 {
-  margin-top: 40px;
+  margin-top: 10px;
+  margin-bottom: 14px;
   font-weight: 600;
 }
 
@@ -601,13 +665,13 @@ p {
   margin-bottom: 8px;
 }
 
-/* INLINE */
+/* INLINE BLOCKS */
 
 .project-inline {
   display: flex;
   align-items: center;
   gap: 60px;
-  margin: 80px 0;
+  margin: 50px 0;
 }
 
 .project-inline.reverse {
@@ -630,6 +694,7 @@ p {
   background: #fff;
   padding: 16px;
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+  max-width: 100%;
 }
 
 /* TECH */
@@ -638,14 +703,12 @@ p {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
-  margin: 25px 0;
-  padding-left: 0 !important;
-  margin-left: 0 !important;
+  margin: 20px 0;
+  padding-left: 0;
   list-style: none;
 }
 
 .tech-list li {
-  list-style: none;
   background: var(--bg-light);
   padding: 7px 16px;
   border-radius: 30px;
@@ -655,7 +718,7 @@ p {
 /* NOTE */
 
 .project-note {
-  margin-top: 35px;
+  margin-top: 30px;
   font-size: 0.9rem;
   color: var(--text-light);
 }
@@ -803,12 +866,57 @@ p {
 
 /* Responsive */
 @media (max-width: 992px) {
+  #myNavbar {
+    padding: 10px 30px;
+  }
+
+  .navbar-logo {
+    height: 80px;
+  }
+
+  .navbar-nav {
+    padding: 15px 0;
+    gap: 10px;
+  }
+
+  .navbar-nav .nav-link {
+    margin: 6px 0;
+  }
+  /*realisations*/
+  #projets-page .subtitle {
+    font-size: 1rem;
+  }
   .about-work {
     grid-template-columns: 1fr;
+  }
+  .project-content {
+    padding: 50px 0;
+  }
+
+  .project-inline {
+    gap: 30px;
+    margin: 40px 0;
+  }
+
+  .inline-image img {
+    width: 200px;
   }
 }
 
 @media (max-width: 768px) {
+  /*realisations*/
+  #projets-page .subtitle {
+    font-size: 0.95rem;
+    padding-bottom: 30px;
+  }
+
+  #projets-page .service-card {
+    padding: 24px;
+  }
+
+  #projets-page .service-card h3 {
+    font-size: 1.05rem;
+  }
   .hero-title {
     font-size: 1.8rem;
   }
@@ -826,6 +934,62 @@ p {
   }
   .contact-grid {
     grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 576px) {
+  /*réalisations*/
+  #projets-page .subtitle {
+    padding-bottom: 25px;
+  }
+
+  #projets-page .service-card {
+    text-align: center;
+  }
+
+  #projets-page .btn-devis {
+    text-align: center;
+  }
+  .project-hero {
+    padding: 40px 0 20px;
+  }
+
+  .project-hero h1 {
+    font-size: 1.6rem;
+  }
+
+  .breadcrumb-custom {
+    font-size: 0.8rem;
+    flex-wrap: wrap;
+  }
+
+  .project-meta {
+    gap: 10px;
+    font-size: 0.75rem;
+  }
+
+  .project-meta span {
+    padding: 5px 12px;
+  }
+
+  .project-inline {
+    text-align: center;
+    margin: 35px 0;
+  }
+
+  .project-content h2 {
+    font-size: 1.25rem;
+  }
+
+  .inline-image {
+    margin-top: 20px;
+  }
+
+  .inline-image img {
+    width: 220px;
+  }
+
+  .tech-list {
+    justify-content: center;
   }
 }
 

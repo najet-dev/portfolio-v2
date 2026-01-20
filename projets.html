@@ -33,50 +33,58 @@
 
   <body>
     <!-- NAVBAR -->
-    <nav id="myNavbar" class="navbar navbar-expand-lg">
-      <div class="container-fluid navbar-container">
-        <a class="navbar-brand" href="index.html">
+   <nav id="myNavbar" class="navbar navbar-expand-lg navbar-light">
+      <div class="container navbar-container">
+        <a class="navbar-brand" href="index.html">         
           <img
-            src="images/Logo.png"
-            alt="Logo bloomviaDigital"
-            class="navbar-logo"
+          src="images/Logo.png"
+          alt="Logo bloomviaDigital"
+          class="navbar-logo"
           />
-        </a>
-
+        </a>        
         <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon"></span>
         </button>
-
-        <div
-          class="collapse navbar-collapse justify-content-end"
-          id="navbarNavAltMarkup"
-        >
-          <div class="navbar-nav">
-            <a class="nav-link" href="index.html">Accueil</a>
-            <a class="nav-link" href="services.html">Services</a>
-            <a class="nav-link active" href="projets.html">Réalisations</a>
-            <a class="nav-link" href="about.html">À propos</a>
-            <a class="nav-link" href="contact.html">Contact</a>
-          </div>
-        </div>
+      <div
+      class="collapse navbar-collapse justify-content-end"
+      id="navbarNavAltMarkup"
+       >
+      <div class="navbar-nav align-items-lg-center">
+        <a class="nav-link" href="index.html">Accueil</a>
+        <a class="nav-link" href="services.html">Services</a>
+        <a class="nav-link active" href="projets.html">Réalisations</a>
+        <a class="nav-link" href="about.html">À propos</a>
+        <a class="nav-link" href="contact.html">Contact</a>
       </div>
-    </nav>
+    </div>
+  </div>
+</nav>
 
     <!-- SECTION PROJETS -->
     <section id="projets-page">
-      <div class="section-title-bg">
+      <div class="section-title-bg page-hero">
         <h1>Mes réalisations</h1>
       </div>
 
-      <div class="container">
+      <section class="page-intro">
+        <div class="container">
+          <div class="breadcrumb-custom">
+            <a href="index.html">Accueil</a>
+            <span>></span>
+            <span class="current">Mes réalisations</span>
+          </div>
+        </div>
+      </section>
+
+      <div class="container projets-content">
         <p class="subtitle">
           Voici quelques réalisations que j'ai conçues pour des indépendants,
           artisans et petites entreprises.<br />
@@ -86,7 +94,7 @@
 
         <div class="row g-4">
           <!-- PROJET 1 -->
-          <div class="col-md-6 col-lg-4">
+         <div class="col-12 col-md-6 col-lg-4">
             <div class="service-card text-center">
               <h3>Site vitrine pour un peintre en bâtiment</h3>
               <p>
@@ -177,6 +185,7 @@
           </a>
         </div>
       </div>
+  </div>
 
       <!-- WAVE FULL WIDTH -->
       <div class="wave-wrapper">
