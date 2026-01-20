@@ -25,11 +25,17 @@
   </head>
   <body data-bs-target="#myNavbar">
     <nav id="myNavbar" class="navbar navbar-expand-lg">
-      <div class="container-fluid">
-        <!-- Logo à gauche -->
-        <a class="navbar-brand" href="#"> bloomviaDigital </a>
+      <div class="container-fluid navbar-container">
+        <!-- Logo -->
+        <a class="navbar-brand" href="index.html">
+          <img
+            src="images/Logo.png"
+            alt="Logo bloomviaDigital"
+            class="navbar-logo"
+          />
+        </a>
 
-        <!-- Bouton pour petits écrans -->
+        <!-- Burger menu mobile -->
         <button
           class="navbar-toggler"
           type="button"
@@ -42,15 +48,13 @@
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <!-- Liens à droite -->
+        <!-- Liens menu -->
         <div
           class="collapse navbar-collapse justify-content-end"
           id="navbarNavAltMarkup"
         >
           <div class="navbar-nav">
-            <a class="nav-link" aria-current="page" href="index.html"
-              >Accueil</a
-            >
+            <a class="nav-link" href="index.html">Accueil</a>
             <a class="nav-link" href="services.html">Services</a>
             <a class="nav-link" href="projets.html">Réalisations</a>
             <a class="nav-link" href="about.html">À propos</a>
@@ -61,32 +65,35 @@
     </nav>
 
     <!-- Section projet -->
-    <section class="project-hero">
+    <section class="page-hero project-hero">
       <div class="container">
-        <a href="projets.html" class="return-link">
-          <i class="fas fa-arrow-left"></i> Retour aux réalisations
-        </a>
         <h1>Application Steamer</h1>
       </div>
     </section>
-
-    <section class="project-intro">
+    <section class="page-intro project-intro">
       <div class="container">
-        <p class="project-subtitle">Application mobile développée en équipe</p>
-
-        <div class="project-meta">
-          <span><strong>Entreprise :</strong> Mithra Production</span>
-          <span><strong>Durée :</strong> 6 semaines</span>
-          <span><strong>Tech :</strong> Ionic, NestJS, MariaDB</span>
+        <div class="breadcrumb-custom">
+          <a href="index.html">Accueil</a>
+          <span>></span>
+          <a href="projets.html">Réalisations</a>
+          <span>></span>
+          <span class="current">Application Steamer</span>
         </div>
       </div>
     </section>
 
     <section class="project-content">
       <div class="container">
-        <div class="project-inline">
-          <div class="inline-text">
+        <div class="project-inline row align-items-center">
+          <div class="inline-text col-lg-7 col-md-12">
+            <div class="project-meta">
+              <span><strong>Entreprise :</strong> Mithra Production</span>
+              <span><strong>Durée :</strong> 6 semaines</span>
+              <span><strong>Tech :</strong> Ionic, NestJS, MariaDB</span>
+            </div>
+
             <h2>Contexte du projet</h2>
+
             <p>
               Steamer est une application mobile développée dans un cadre
               professionnel visant à faciliter les interactions entre joueurs
@@ -94,7 +101,7 @@
             </p>
           </div>
 
-          <div class="inline-image">
+          <div class="inline-image col-lg-5 col-md-12">
             <img src="images/swipe.png" alt="Interface swipe Steamer" />
           </div>
         </div>
@@ -137,6 +144,19 @@
         </ul>
       </div>
     </section>
+    <!-- WAVE FULL WIDTH -->
+    <div class="wave-wrapper">
+      <svg viewBox="0 0 1440 160" preserveAspectRatio="none">
+        <path
+          class="wave wave1"
+          d="M0,90 C240,140 480,40 720,70 960,90 1200,120 1440,70 L1440,160 L0,160 Z"
+        />
+        <path
+          class="wave wave2"
+          d="M0,100 C240,120 480,60 720,90 960,110 1200,140 1440,90 L1440,160 L0,160 Z"
+        />
+      </svg>
+    </div>
 
     <!-- Footer -->
     <footer class="footer text-center text-lg-start">

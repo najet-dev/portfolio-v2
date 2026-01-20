@@ -37,18 +37,30 @@
 
   <body>
     <nav id="myNavbar" class="navbar navbar-expand-lg">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">bloomviaDigital</a>
+      <div class="container-fluid navbar-container">
+        <!-- Logo -->
+        <a class="navbar-brand" href="index.html">
+          <img
+            src="images/Logo.png"
+            alt="Logo bloomviaDigital"
+            class="navbar-logo"
+          />
+        </a>
 
+        <!-- Burger menu mobile -->
         <button
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
 
+        <!-- Liens menu -->
         <div
           class="collapse navbar-collapse justify-content-end"
           id="navbarNavAltMarkup"
@@ -64,11 +76,21 @@
       </div>
     </nav>
 
-    <section class="services-page">
-      <div class="section-title-bg">
-        <h1>Mes services en création de sites web</h1>
+    <section id="services-page">
+      <div class="section-title-bg page-hero">
+        <h1>Mes services</h1>
       </div>
 
+      <!-- RETOUR / BREADCRUMB -->
+      <section class="page-intro">
+        <div class="container">
+          <div class="breadcrumb-custom">
+            <a href="index.html">Accueil</a>
+            <span>></span>
+            <span class="current">Mes services</span>
+          </div>
+        </div>
+      </section>
       <div class="container">
         <p class="subtitle">
           Des sites sur mesure, modernes et efficaces.<br />
@@ -138,6 +160,20 @@
         <div class="text-center mt-5">
           <a href="contact.html" class="btn-devis">Demander un devis</a>
         </div>
+      </div>
+
+      <!-- Vague -->
+      <div class="wave-wrapper">
+        <svg viewBox="0 0 1440 160" preserveAspectRatio="none">
+          <path
+            class="wave wave1"
+            d="M0,90 C240,140 480,40 720,70 960,90 1200,120 1440,70 L1440,160 L0,160 Z"
+          />
+          <path
+            class="wave wave2"
+            d="M0,100 C240,120 480,60 720,90 960,110 1200,140 1440,90 L1440,160 L0,160 Z"
+          />
+        </svg>
       </div>
     </section>
 

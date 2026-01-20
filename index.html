@@ -46,41 +46,43 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body data-bs-spy="scroll" data-bs-target="#myNavbar">
-    <nav id="myNavbar" class="navbar navbar-expand-lg">
-      <div class="container-fluid">
-        <!-- Logo à gauche -->
-        <a class="navbar-brand" href="#"> bloomviaDigital </a>
+    <!-- NAVBAR -->
+<nav id="myNavbar" class="navbar navbar-expand-lg">
+  <div class="container-fluid navbar-container">
+    <a class="navbar-brand" href="index.html">
+      <img
+        src="images/Logo.png"
+        alt="Logo bloomviaDigital"
+        class="navbar-logo"
+      />
+    </a>
 
-        <!-- Bouton pour petits écrans -->
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-        <!-- Liens à droite -->
-        <div
-          class="collapse navbar-collapse justify-content-end"
-          id="navbarNavAltMarkup"
-        >
-          <div class="navbar-nav">
-            <a class="nav-link active" aria-current="page" href="index.html"
-              >Accueil</a
-            >
-            <a class="nav-link" href="services.html">Services</a>
-            <a class="nav-link" href="projets.html">Réalisations</a>
-            <a class="nav-link" href="about.html">À propos</a>
-            <a class="nav-link" href="contact.html">Contact</a>
-          </div>
-        </div>
+    <div
+      class="collapse navbar-collapse justify-content-end"
+      id="navbarNavAltMarkup"
+    >
+      <div class="navbar-nav">
+        <a class="nav-link active" href="index.html">Accueil</a>
+        <a class="nav-link" href="services.html">Services</a>
+        <a class="nav-link" href="projets.html">Réalisations</a>
+        <a class="nav-link" href="about.html">À propos</a>
+        <a class="nav-link" href="contact.html">Contact</a>
       </div>
-    </nav>
+    </div>
+  </div>
+</nav>
 
     <!-- Section about-->
     <section id="hero">
@@ -253,37 +255,46 @@
             alt="Najet Ramoul - Développeuse web freelance"
           />
         </div>
-
         <!-- Texte à droite -->
         <div class="col-md-8">
           <h2 class="title mb-3">Spécialiste en création de sites web</h2>
-
-          <p class="about">
-            Spécialisée dans la
-            <strong
-              >conception de sites web modernes, performants et parfaitement
-              adaptés à vos besoins</strong
-            >, j'accompagne les artisans, indépendants et entreprises dans la
+          <p class="about">Spécialisée dans la<strong>
+            conception de sites web modernes, performants et parfaitement
+            adaptés à vos besoins
+            </strong>,
+            j'accompagne les artisans, indépendants et entreprises dans la
             valorisation de leur activité en ligne.
           </p>
-
           <p class="about">
             Mon approche repose sur une écoute attentive, une conception sur
-            mesure et une attention particulière portée à l'<strong
-              >ergonomie</strong
-            >
+            mesure et une attention particulière portée à l'
+            <strong>ergonomie</strong>
             comme à la <strong>performance</strong>. Chaque projet est pensé
             pour refléter votre identité tout en garantissant une expérience
             fluide et efficace sur tous les supports (ordinateur, tablette,
             mobile).
-          </p>
-
-          <!-- Bouton à propos -->
-          <div class="text-start mt-4">
-            <a href="about.html" class="btn devis btn-lg">En savoir plus</a>
+          </p>         
+         <div class="text-start mt-4">
+           <a href="about.html" class="btn devis btn-lg">En savoir plus</a>
           </div>
         </div>
       </div>
+</section>
+
+<!-- WAVE FULL WIDTH -->
+<div class="wave-wrapper">
+  <svg viewBox="0 0 1440 160" preserveAspectRatio="none">
+    <path
+      class="wave wave1"
+      d="M0,90 C240,140 480,40 720,70 960,90 1200,120 1440,70 L1440,160 L0,160 Z"
+    />
+    <path
+      class="wave wave2"
+      d="M0,100 C240,120 480,60 720,90 960,110 1200,140 1440,90 L1440,160 L0,160 Z"
+    />
+  </svg>
+</div>
+
     </section>
 
     <!-- Footer -->

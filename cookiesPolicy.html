@@ -37,16 +37,30 @@
   <body>
     <!-- Navbar -->
     <nav id="myNavbar" class="navbar navbar-expand-lg">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">bloomviaDigital</a>
+      <div class="container-fluid navbar-container">
+        <!-- Logo -->
+        <a class="navbar-brand" href="index.html">
+          <img
+            src="images/Logo.png"
+            alt="Logo bloomviaDigital"
+            class="navbar-logo"
+          />
+        </a>
+
+        <!-- Burger menu mobile -->
         <button
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
+
+        <!-- Liens menu -->
         <div
           class="collapse navbar-collapse justify-content-end"
           id="navbarNavAltMarkup"
@@ -63,9 +77,18 @@
     </nav>
 
     <!-- BANDEAU -->
-    <div class="section-title-bg">
+    <div class="page-hero section-title-bg">
       <h1>Politique de Cookies</h1>
     </div>
+    <section class="page-intro">
+      <div class="container">
+        <div class="breadcrumb-custom">
+          <a href="index.html">Accueil</a>
+          <span>></span>
+          <span class="current">Politique de Cookies</span>
+        </div>
+      </div>
+    </section>
 
     <!-- Section -->
     <section id="cookies-policy" class="py-5">
@@ -147,6 +170,19 @@
         </p>
       </div>
     </section>
+    <!-- WAVE FULL WIDTH -->
+    <div class="wave-wrapper">
+      <svg viewBox="0 0 1440 160" preserveAspectRatio="none">
+        <path
+          class="wave wave1"
+          d="M0,90 C240,140 480,40 720,70 960,90 1200,120 1440,70 L1440,160 L0,160 Z"
+        />
+        <path
+          class="wave wave2"
+          d="M0,100 C240,120 480,60 720,90 960,110 1200,140 1440,90 L1440,160 L0,160 Z"
+        />
+      </svg>
+    </div>
 
     <!-- Footer -->
     <footer class="footer text-center text-lg-start">

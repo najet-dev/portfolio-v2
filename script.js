@@ -181,3 +181,9 @@ document.addEventListener("DOMContentLoaded", () => {
 document.getElementById("cookie-close").addEventListener("click", () => {
   document.getElementById("cookie-overlay").style.display = "none";
 });
+
+window.addEventListener("scroll", () => {
+  document
+    .getElementById("myNavbar")
+    .classList.toggle("scrolled", window.scrollY > 20);
+});
