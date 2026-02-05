@@ -161,8 +161,7 @@ section {
 
 /*TITRES & TEXTES */
 h1,
-h2,
-h3 {
+h2 {
   color: var(--primary);
 }
 
@@ -193,6 +192,7 @@ p {
   text-align: center;
   margin-bottom: 28px;
   font-weight: 600;
+  color: var(--text-dark);
 }
 
 .about-intro p {
@@ -220,7 +220,7 @@ p {
   margin: 0;
 }
 .about-work h3 {
-  margin-bottom: 18px;
+  margin-bottom: 8px;
 }
 
 .about-list {
@@ -359,15 +359,17 @@ p {
   text-align: center;
   font-weight: 700;
 }
-
-.subtitle {
-  text-align: center;
-  font-size: 1.1rem;
-  line-height: 1.8;
-  color: var(--text-light);
+.services-intro {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--text-dark);
   max-width: 770px;
-  margin: 0 auto;
-  padding-bottom: 50px;
+  margin: 0 auto 60px;
+  text-align: center;
+}
+
+.services-intro strong {
+  font-weight: 600;
 }
 
 .service-card {
@@ -377,53 +379,223 @@ p {
   height: 100%;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   transition: 0.3s;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .service-card:hover {
   transform: translateY(-6px);
 }
 
-.service-icon {
-  font-size: 2.5rem;
-  color: var(--accent);
-  margin-bottom: 20px;
-}
-
 .service-card .text-muted {
   font-size: 0.95rem;
   margin-top: 10px;
 }
-/* PAGE REALISATIONS */
-.projets-content {
-  padding-top: 20px;
-  padding-bottom: 80px;
-}
 
-#projets-page .subtitle {
-  margin-top: 10px;
-  margin-bottom: 40px;
-}
+/* PAGE SERVICE */
+.service-card {
+  background-color: var(--white);
+  border-radius: 12px;
+  padding: 30px;
+  height: 100%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
 
-#projets-page .service-card {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
+  text-align: left;
 }
 
-#projets-page .service-card h3 {
+.service-card:hover {
+  transform: translateY(-6px);
+}
+
+.service-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 16px;
+}
+
+.service-icon {
+  font-size: 1.8rem;
+  color: var(--accent);
+  flex-shrink: 0;
+}
+
+/* Titre */
+.service-card h3 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: var(--text-dark);
+  margin: 0;
+}
+
+/* Texte */
+.service-card p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--text-dark);
+  margin-bottom: 20px;
+}
+
+/* Bouton */
+.service-card .btn-card {
+  margin-top: auto;
+  align-self: flex-start;
+}
+
+/* showcase */
+#service-vitrine .service-header {
+  display: block;
+  padding: 0 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#service-vitrine .service-header p {
+  display: block;
+  margin-bottom: 1.5rem;
+  line-height: 1.8;
   font-size: 1.15rem;
+}
+#service-vitrine {
+  padding-top: 60px;
+  padding-bottom: 80px;
+  color: var(--text-dark);
+  font-size: 16px;
+  line-height: 1.8;
+}
+h3 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: var(--text-dark);
+  margin: 0;
+}
+
+/* Titres */
+#service-vitrine h1 {
+  font-weight: 700;
+  font-size: 2rem;
+  color: var(--primary);
+  margin-bottom: 20px;
+}
+
+#service-vitrine h5 {
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
+
+/* Cartes features : même hauteur */
+.service-features .col-md-6 {
+  display: flex;
+}
+
+/* Features (icônes + texte) */
+.service-features .feature {
+  height: 100%;
+  width: 100%;
+  background-color: var(--bg-light);
+  padding: 20px;
+  border-radius: 12px;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.service-features .feature:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+.feature h3 {
+  margin-bottom: 0.75rem;
+}
+
+.feature p {
+  margin-top: 0;
+}
+
+.service-features .feature i {
+  color: var(--accent);
+  margin-right: 15px;
+  flex-shrink: 0;
+}
+
+/* LISTES */
+.service-page ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 15px;
+}
+
+.service-page ul li {
+  position: relative;
+  padding-left: 28px;
+  margin-bottom: 10px;
+}
+
+.service-page ul li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--accent);
+  font-weight: bold;
+}
+
+/* Listes numérotées */
+.service-page ol {
+  padding-left: 20px;
+  margin-top: 15px;
+}
+
+.service-page ol li {
   margin-bottom: 12px;
 }
 
-#projets-page .service-card p {
-  font-size: 0.95rem;
-  line-height: 1.6;
+#service-vitrine ol li {
+  margin-bottom: 12px;
+}
+/* Bouton secondaire – cards services */
+.btn-card {
+  background: none;
+  border: none;
+  color: var(--primary);
+  font-weight: 500;
+  padding: 0;
 }
 
-#projets-page .btn-devis {
-  align-self: center;
-  margin-top: auto;
+.btn-card::after {
+  content: " →";
+  transition: transform 0.2s ease;
+}
+
+.btn-card:hover::after {
+  transform: translateX(4px);
+}
+
+/* Bouton final */
+.btn-devis {
+  margin-top: 30px;
+  padding: 0.85rem 2rem;
+  font-size: 1rem;
+  border-radius: 50px;
+  background-color: var(--accent);
+  color: #fff;
+  border: 2px solid var(--accent);
+  transition: all 0.3s ease;
+}
+
+.btn-devis:hover {
+  background-color: #fff;
+  color: var(--accent);
+  box-shadow: 0 8px 20px rgba(255, 107, 107, 0.25);
 }
 
 /* CONTACT PAGE */
@@ -434,12 +606,13 @@ p {
 
 .contact-top {
   max-width: 700px;
-  margin: 0 auto 2rem auto;
+  margin: 0 auto 4rem auto;
   text-align: center;
 }
 
 .contact-top h2 {
   margin-bottom: 0.6rem;
+  color: var(--text-dark);
 }
 
 .contact-top p {
@@ -495,7 +668,6 @@ p {
   }
 }
 
-/* Focus corail */
 #contact-page .form-control:focus {
   border-color: var(--accent);
   box-shadow: 0 0 0 0.15rem rgba(255, 107, 107, 0.25);
@@ -955,6 +1127,17 @@ p {
   /*réalisations*/
   #projets-page .subtitle {
     padding-bottom: 25px;
+  }
+  .service-card {
+    text-align: center;
+  }
+
+  .service-header {
+    justify-content: center;
+  }
+
+  .service-card .btn-card {
+    align-self: center;
   }
 
   #projets-page .service-card {
