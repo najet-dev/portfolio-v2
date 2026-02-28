@@ -86,6 +86,7 @@
             <a class="nav-link active" href="services.html">Services</a>
             <a class="nav-link" href="projets.html">Réalisations</a>
             <a class="nav-link" href="about.html">À propos</a>
+            <a class="nav-link" href="blog.html">Blog</a>
             <a class="nav-link" href="contact.html">Contact</a>
           </div>
         </div>
@@ -278,6 +279,7 @@
                   <a href="projets.html" class="footer-link">Réalisations</a>
                 </li>
                 <li><a href="about.html" class="footer-link">À propos</a></li>
+                <li><a href="blog.html" class="footer-link">Blog</a></li>
                 <li><a href="contact.html" class="footer-link">Contact</a></li>
               </ul>
             </div>
@@ -315,11 +317,99 @@
       </div>
 
       <div class="footer-bottom py-3 text-center">
+        <!-- Social media -->
+        <div class="footer-social mb-3">
+          <a
+            href="https://www.instagram.com/bloomviadigital/"
+            class="social-icon me-3"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a
+            href="https://www.facebook.com/bloomviadigital/"
+            class="social-icon me-3"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a
+            href=""
+            class="social-icon me-3"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+        </div>
         <p class="mb-0">
           &copy; Copyright tous droits réservés - bloomviaDigital 2025
         </p>
       </div>
     </footer>
+    <!-- COOKIE POPUP -->
+    <div id="cookie-overlay" class="cookie-overlay">
+      <div class="cookie-box">
+        <span class="cookie-close" id="cookie-close">&times;</span>
+        <!-- VUE INFO -->
+        <div id="cookie-info" class="cookie-view active">
+          <h3>Gestion des cookies</h3>
+          <p>
+            Nous utilisons des cookies pour améliorer votre expérience et
+            analyser le trafic du site. Vous pouvez accepter, refuser ou
+            personnaliser vos choix.
+          </p>
+          <div class="cookie-actions">
+            <button class="btn-cookie btn-outline" id="cookie-settings-btn">
+              Paramétrer
+            </button>
+            <button class="btn-cookie btn-light" id="cookie-refuse">
+              Refuser
+            </button>
+            <button class="btn-cookie btn-primary" id="cookie-accept">
+              Accepter
+            </button>
+          </div>
+          <div class="cookie-links">
+            <a href="cookiesPolicy.html">Politique de cookies</a>
+            <a href="privacyPolicy.html">Politique de Confidentialité</a>
+          </div>
+        </div>
+
+        <!-- VUE PARAMÈTRES -->
+        <div id="cookie-settings" class="cookie-view">
+          <h3>Préférences des cookies</h3>
+
+          <div class="cookie-option">
+            <label>
+              <input type="checkbox" checked disabled />
+              Cookies essentiels
+            </label>
+            <p>Nécessaires au bon fonctionnement du site.</p>
+          </div>
+
+          <div class="cookie-option">
+            <label>
+              <input type="checkbox" id="analyticsCookies" />
+              Cookies analytiques
+            </label>
+            <p>Nous aident à comprendre l'utilisation du site.</p>
+          </div>
+
+          <div class="cookie-actions two-buttons">
+            <button class="btn-cookie btn-secondary" id="cookie-back">
+              Retour
+            </button>
+            <button class="btn-cookie btn-primary" id="cookie-save">
+              Enregistrer
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
